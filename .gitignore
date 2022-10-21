@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 .idea
+Assets/QFramework/Framework/Examples
+Assets/QFramework/Toolkits/_CoreKit/*/Example
+Assets/QFramework/Toolkits/*/Example
+Assets/QFramework/Toolkits/_CoreKit/*/Examples
