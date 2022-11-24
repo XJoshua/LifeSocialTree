@@ -1,0 +1,139 @@
+ui/ Key,Chinese,English (United States)
+ui/rare_0,空,empty
+ui/rare_1,普通,normal
+ui/rare_2,优秀,uncommon
+ui/rare_3,精良,rare
+ui/rare_4,史诗,epic
+ui/rare_5,传说,legendary
+ui/rare_6,神话,mystery
+ui/spin,旋转,spin
+ui/skip,跳过,skip
+ui/mail_title,工作信息,Work Mail
+ui/task_mail,工作清单,Task Mail
+ui/confirm,确认,Confirm
+ui/boss_1,满怀希望的上司,Hopeful Boss
+ui/boss_2,乐观的上司,Optimistic Boss
+ui/boss_3,失望的上司,Disappointed Boss
+ui/continue,继续,Continue
+ui/newgame,新游戏,New Game
+ui/setting,设置,Settings
+ui/collection,收藏,Collection
+ui/game_title,幸运公司,LUCK COMPANY
+ui/round,剩余回合： ,LEFT ROUND: 
+ui/back_main,主菜单,Back To Main
+ui/get_score,获得{0}枚,Get {0}
+letter/ Key,Chinese,English (United States)
+letter/player_title,员工,
+letter/letter_welcome,"欢迎加入，{0}。
+工位上配置了超强J型概率工作仪，你需要在指定的轮次内获得足够的分数以完成每天的任务。
+今天的任务是在<color=#E64539>{2}次旋转</color>获得<color=#E64539>{1}分</color>。
+PS：别担心，就和常见的老虎机一样操作。很简单，我相信你。
+祝你好运。",WAIT TO FILL
+letter/letter_welcome_writer,满怀希望的上司,
+letter/letter_pay,"{0}：
+任务时间截止，请提交你的<color=#E64539>分数{1}</color>。
+PS：不错，你果然完成了。也许可以给你安排更重要一点的工作。",WAIT TO FILL
+letter/letter_pay_writer,满意的上司,
+letter/letter_task,"{0}：
+你的任务分数增加至<color=#E64539>{1}</color>，请在<color=#E64539>{2}次旋转</color>内提交。
+PS：看到之前的表现，这点难度一定不在话下吧。",WAIT TO FILL
+letter/letter_task_writer,满怀期许的上司 ,
+letter/letter_end,"{0}：
+你的分数不足，将启动离职程序。
+PS：看来你的能力还是不足啊，多努力努力，下次再尝试吧。",WAIT TO FILL
+letter/letter_end_writer,失望的上司,
+sbl/ Key,Chinese,English (United States)
+sbl/sbl_0000_name,空,empty
+sbl/sbl_1001_name,金币,coin
+sbl/sbl_1002_name,猫,cat
+sbl/sbl_1003_name,花,cherry
+sbl/sbl_1006_name,牛奶,pearl
+sbl/sbl_1007_name,三点色子,milk
+sbl/sbl_1008_name,五点色子,dice_three
+sbl/sbl_1009_name,骨灰盒,turtle
+sbl/sbl_1101_name,樱桃,dwarf
+sbl/sbl_1102_name,香蕉,
+sbl/sbl_1103_name,橘子,beer
+sbl/sbl_1104_name,苹果,egg
+sbl/sbl_1105_name,杏,seed
+sbl/sbl_1106_name,菠萝,
+sbl/sbl_1107_name,芒果,gambler
+sbl/sbl_1108_name,柠檬,
+sbl/sbl_1109_name,西瓜,cheese
+sbl/sbl_1110_name,草莓,ore
+sbl/sbl_1111_name,火龙果,owl
+sbl/sbl_1112_name,农夫,
+sbl/sbl_1201_name,糖果,monkey
+sbl/sbl_1202_name,饼干,beehive
+sbl/sbl_1203_name,牛角包,
+sbl/sbl_1204_name,奶酪,honey
+sbl/sbl_1205_name,巧克力,beehive
+sbl/sbl_1206_name,甜甜圈,
+sbl/sbl_1207_name,棒棒糖,diamond
+sbl/sbl_1208_name,冰棒,
+sbl/sbl_1209_name,冰淇淋,
+sbl/sbl_1210_name,汉堡,
+sbl/sbl_1301_name,种子,
+sbl/sbl_1302_name,雨水,
+sbl/sbl_1303_name,阳光,
+sbl/sbl_1304_name,鸡尾酒,
+sbl/sbl_1305_name,高级酒,
+sbl/sbl_1306_name,啤酒,
+sbl/sbl_1307_name,矮人,
+sbl/sbl_1308_name,富翁,
+sbl/sbl_1309_name,TNT,
+sbl/sbl_1401_name,矿石,
+sbl/sbl_1402_name,富矿,
+sbl/sbl_1403_name,煤炭,
+sbl/sbl_1404_name,幸运石子,
+sbl/sbl_1405_name,珍珠,
+sbl/sbl_1406_name,紫水晶,
+sbl/sbl_1407_name,绿宝石,
+sbl/sbl_1408_name,蓝宝石,
+sbl/sbl_1409_name,红宝石,
+sbl/sbl_1410_name,钻石,
+sbl/sbl_1411_name,矿工,
+sbl/sbl_1412_name,矿洞,
+sbl/sbl_1413_name,地质学家,
+sbl/sbl_1414_name,贵妇,
+sbl/sbl_1501_name,乌龟,
+sbl/sbl_1502_name,水母,
+sbl/sbl_1503_name,鱿鱼,
+sbl/sbl_1504_name,龙虾,
+sbl/sbl_1505_name,螃蟹,
+sbl/sbl_1506_name,热带鱼,
+sbl/sbl_1507_name,比目鱼,
+sbl/sbl_1508_name,鳗鱼,
+sbl/sbl_1509_name,珊瑚,
+sbl/sbl_1510_name,牡蛎 oyster,
+sbl/sbl_1511_name,海星,
+sbl/sbl_1512_name,渔夫,
+sbl/sbl_1513_name,水泡,
+sbl/sbl_1514_name,肥皂,
+sbl/sbl_1601_name,钥匙,
+sbl/sbl_1602_name,魔法钥匙,
+sbl/sbl_1603_name,带锁的箱子,
+sbl/sbl_1604_name,保险箱 Safe,
+sbl/sbl_1605_name,宝箱 Treasure,
+sbl/sbl_1606_name,魔法宝箱,
+sbl/sbl_1611_name,福袋,
+sbl/sbl_1612_name,四叶草,
+sbl/sbl_1613_name,幸运7,
+sbl/sbl_1621_name,鸡蛋,
+sbl/sbl_1622_name,小鸡,
+sbl/sbl_1623_name,大鸡,
+sbl/sbl_1624_name,金蛋,
+sbl/sbl_1625_name,煎蛋,
+sbl/sbl_1626_name,鹅,
+sbl/sbl_1627_name,山羊,
+sbl/sbl_1701_name,方片,
+sbl/sbl_1702_name,红心,
+sbl/sbl_1703_name,黑桃,
+sbl/sbl_1704_name,草花,
+sbl/sbl_1801_name,蜜蜂,
+sbl/sbl_1802_name,蜂蜜,
+sbl/sbl_1803_name,蜂巢,
+sbl/sbl_1804_name,熊,
+sbl/sbl_1807_name,兔子,
+sbl/sbl_1808_name,兔毛,
+sbl/sbl_1805_name,驯兽师,
