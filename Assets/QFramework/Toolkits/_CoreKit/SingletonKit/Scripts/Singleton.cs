@@ -84,5 +84,10 @@ GameDataManager.Instance.Dispose();
         public virtual void OnSingletonInit()
         {
         }
+        
+        public static T Get()
+        {
+            return Instance;
+        }
     }
 }

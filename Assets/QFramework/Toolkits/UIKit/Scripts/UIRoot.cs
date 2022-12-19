@@ -23,6 +23,7 @@
  * THE SOFTWARE.
  ****************************************************************************/
 
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,6 +41,9 @@ namespace QFramework
         public RectTransform Common;
         public RectTransform PopUI;
         public RectTransform CanvasPanel;
+        
+        public Transform PoolRoot;
+        private Dictionary<string, Transform> poolRootDic = new Dictionary<string, Transform>();
         
         private static UIRoot mInstance;
 
@@ -126,6 +130,20 @@ namespace QFramework
             }
         }
 
+        public Transform GetUIPoolRoot(string key)
+        {
+            if (poolRootDic.ContainsKey(key) == false)
+            {
+                var objRoot = new GameObject(key, typeof(RectTransform));
+                objRoot.transform.SetParent(PoolRoot);
+                objRoot.transform.localScale = Vector3.one;
+                poolRootDic.Add(key, objRoot.transform);
+            }
+
+            return poolRootDic[key];
+        }
+
+        
         public void OnSingletonInit()
         {
             
