@@ -1,2 +1,2 @@
-# LuckCampany
-A Luck-Be-A-Landlord-like Game
+# LifeSocialTree
+A Game for GGJ china online
