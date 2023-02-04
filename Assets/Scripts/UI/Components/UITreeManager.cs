@@ -126,7 +126,7 @@ namespace Game
             UIBranch uiBranch = GameObject.Instantiate(UiBranchPrefab, startPos, rot);
             uiBranch.transform.SetParent(TrunkRoot);
             uiBranch.gameObject.SetActive(true);
-            uiBranch.transform.localScale = new Vector3(scale, scale, scale);
+            uiBranch.transform.localScale = new Vector3(scale, 0, 1);
 
             uiBranch.CreateInfo(startPos, angle, scale, depth);
             

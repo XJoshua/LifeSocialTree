@@ -98,7 +98,12 @@ namespace Game
                         }
 
                         Sleep = true;
+                        BranchRate += Service.Cfg.BaseConfig.BranchRate;
                         return;
+                    }
+                    else
+                    {
+                        BranchRate += Service.Cfg.BaseConfig.BranchRateAdd;
                     }
 
                     if (!Sleep)
@@ -111,6 +116,10 @@ namespace Game
                             Debug.Log($"{IndexPath} Event Happen!");
 
                             EventRate = Service.Cfg.BaseConfig.EventRate;
+                        }
+                        else
+                        {
+                            EventRate += Service.Cfg.BaseConfig.EventRateAdd;
                         }
                     }
                 }

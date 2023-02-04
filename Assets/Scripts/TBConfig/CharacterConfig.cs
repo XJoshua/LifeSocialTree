@@ -21,24 +21,28 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
         { if(!_json["id"].IsString) { throw new SerializationException(); }  Id = _json["id"]; }
         { if(!_json["name"].IsString) { throw new SerializationException(); }  Name = _json["name"]; }
         { if(!_json["image"].IsString) { throw new SerializationException(); }  Image = _json["image"]; }
-        { if(!_json["water_need"].IsNumber) { throw new SerializationException(); }  WaterNeed = _json["water_need"]; }
-        { if(!_json["fertile_need"].IsNumber) { throw new SerializationException(); }  FertileNeed = _json["fertile_need"]; }
-        { if(!_json["care_need"].IsNumber) { throw new SerializationException(); }  CareNeed = _json["care_need"]; }
-        { if(!_json["harvest"].IsNumber) { throw new SerializationException(); }  Harvest = _json["harvest"]; }
-        { if(!_json["price"].IsNumber) { throw new SerializationException(); }  Price = _json["price"]; }
+        { if(!_json["priority"].IsNumber) { throw new SerializationException(); }  Priority = _json["priority"]; }
+        { if(!_json["weight"].IsNumber) { throw new SerializationException(); }  Weight = _json["weight"]; }
+        { if(!_json["relationship"].IsString) { throw new SerializationException(); }  Relationship = _json["relationship"]; }
+        { if(!_json["desc"].IsString) { throw new SerializationException(); }  Desc = _json["desc"]; }
+        { if(!_json["job"].IsString) { throw new SerializationException(); }  Job = _json["job"]; }
+        { if(!_json["effect"].IsString) { throw new SerializationException(); }  Effect = _json["effect"]; }
+        { var __json0 = _json["active_flag"]; if(!__json0.IsArray) { throw new SerializationException(); } ActiveFlag = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  ActiveFlag.Add(__v0); }   }
         PostInit();
     }
 
-    public CharacterConfig(string id, string name, string image, int water_need, int fertile_need, int care_need, int harvest, int price ) 
+    public CharacterConfig(string id, string name, string image, int priority, int weight, string relationship, string desc, string job, string effect, System.Collections.Generic.List<string> active_flag ) 
     {
         this.Id = id;
         this.Name = name;
         this.Image = image;
-        this.WaterNeed = water_need;
-        this.FertileNeed = fertile_need;
-        this.CareNeed = care_need;
-        this.Harvest = harvest;
-        this.Price = price;
+        this.Priority = priority;
+        this.Weight = weight;
+        this.Relationship = relationship;
+        this.Desc = desc;
+        this.Job = job;
+        this.Effect = effect;
+        this.ActiveFlag = active_flag;
         PostInit();
     }
 
@@ -56,11 +60,13 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
     /// </summary>
     public string Name { get; private set; }
     public string Image { get; private set; }
-    public int WaterNeed { get; private set; }
-    public int FertileNeed { get; private set; }
-    public int CareNeed { get; private set; }
-    public int Harvest { get; private set; }
-    public int Price { get; private set; }
+    public int Priority { get; private set; }
+    public int Weight { get; private set; }
+    public string Relationship { get; private set; }
+    public string Desc { get; private set; }
+    public string Job { get; private set; }
+    public string Effect { get; private set; }
+    public System.Collections.Generic.List<string> ActiveFlag { get; private set; }
 
     public const int __ID__ = 676994987;
     public override int GetTypeId() => __ID__;
@@ -80,11 +86,13 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
         + "Id:" + Id + ","
         + "Name:" + Name + ","
         + "Image:" + Image + ","
-        + "WaterNeed:" + WaterNeed + ","
-        + "FertileNeed:" + FertileNeed + ","
-        + "CareNeed:" + CareNeed + ","
-        + "Harvest:" + Harvest + ","
-        + "Price:" + Price + ","
+        + "Priority:" + Priority + ","
+        + "Weight:" + Weight + ","
+        + "Relationship:" + Relationship + ","
+        + "Desc:" + Desc + ","
+        + "Job:" + Job + ","
+        + "Effect:" + Effect + ","
+        + "ActiveFlag:" + Bright.Common.StringUtil.CollectionToString(ActiveFlag) + ","
         + "}";
     }
     

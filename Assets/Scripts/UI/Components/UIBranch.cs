@@ -66,7 +66,8 @@ public class UIBranch : MonoBehaviour
 
         if (!branchData.Sleep)
         {
-            // todo 处理变粗？ 同步size？
+            transform.localScale = GameConfig.GetBranchScale(branchData.Timer, transform.localScale);
+            TheGame.Get().CheckMoveCamera(EndPosTrans.position);
         }
         
         // todo 处理事件
@@ -89,7 +90,7 @@ public class UIBranch : MonoBehaviour
     public void CreateInfo(Vector3 startPos, float angle, float scale, int depth)
     {
         Quaternion rot = Quaternion.Euler(0, 0, angle);
-        EndPosTrans.position = startPos + (rot * (TrunkTopOffset * scale));
+        //EndPosTrans.position = startPos + (rot * (TrunkTopOffset * scale));
         this.angle = angle;
         this.scale = scale;
         this.depth = depth;

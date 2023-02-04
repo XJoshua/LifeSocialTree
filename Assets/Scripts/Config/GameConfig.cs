@@ -18,9 +18,9 @@ public class GameConfig
     
     public static float BranchGrow = 0.25f;
 
-    public static Vector3 GetBranchScale(float timer)
+    public static Vector3 GetBranchScale(float timer, Vector3 scale)
     {
-        return new Vector3(BranchGrow * BranchAspect * timer, BranchGrow * timer, 1);
+        return new Vector3(scale.x, BranchGrow * timer, 1);
     }
     
 }
