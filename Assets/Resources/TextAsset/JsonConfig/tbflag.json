@@ -1,0 +1,52 @@
+[
+  {
+    "id": "plant_1001",
+    "name": "wheat",
+    "image": "plant_icon_1001",
+    "water_need": 10,
+    "fertile_need": 10,
+    "care_need": 10,
+    "harvest": 60,
+    "price": 5
+  },
+  {
+    "id": "plant_1002",
+    "name": "rice",
+    "image": "plant_icon_1002",
+    "water_need": 20,
+    "fertile_need": 20,
+    "care_need": 20,
+    "harvest": 20,
+    "price": 20
+  },
+  {
+    "id": "plant_1003",
+    "name": "turnip",
+    "image": "plant_icon_1003",
+    "water_need": 10,
+    "fertile_need": 10,
+    "care_need": 10,
+    "harvest": 10,
+    "price": 20
+  },
+  {
+    "id": "plant_1004",
+    "name": "barley",
+    "image": "plant_icon_1004",
+    "water_need": 10,
+    "fertile_need": 10,
+    "care_need": 10,
+    "harvest": 10,
+    "price": 20
+  },
+  {
+    "id": "plant_1005",
+    "name": "corn",
+    "image": "plant_icon_1005",
+    "water_need": 10,
+    "fertile_need": 10,
+    "care_need": 10,
+    "harvest": 10,
+    "price": 20
+  }
+]
