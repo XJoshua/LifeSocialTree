@@ -9,7 +9,7 @@ using UnityEditor;
 abstract internal class BaseToolbarElement {
 	static protected string GetPackageRootPath {
 		get {
-			return "Assets/CustomToolbar";
+			return "Assets/ThirdParty/CustomToolbar";
 		}
 	}
 
