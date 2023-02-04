@@ -1,7 +1,7 @@
 [
   {
     "id": "base_config",
-    "overall_grow": 0.02,
+    "overall_grow": 0.05,
     "round_time": 2,
     "base_size": 0.2,
     "base_life": 1000,

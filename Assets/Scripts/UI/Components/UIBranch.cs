@@ -16,15 +16,17 @@ public class UIBranch : MonoBehaviour
     private static readonly int StartSize = Shader.PropertyToID("_StartSize");
     private static readonly int EndSize = Shader.PropertyToID("_EndSize");
 
-    public Vector3 endPos;
+    // public Vector3 endPos;
     
-    public static Vector3 TrunkTopOffset = new Vector3(0, 1, 0);
+    public static Vector3 TrunkTopOffset = new Vector3(0, 1f, 0);
 
     public float angle;
     public float scale;
     public int depth;
 
     public UITreeManager UITreeMng => TheGame.Get().UITreeMng;
+
+    public Transform EndPosTrans;
     
     public void UpdateSize(float startSize, float endSize)
     {
@@ -87,7 +89,7 @@ public class UIBranch : MonoBehaviour
     public void CreateInfo(Vector3 startPos, float angle, float scale, int depth)
     {
         Quaternion rot = Quaternion.Euler(0, 0, angle);
-        this.endPos = startPos + (rot * (TrunkTopOffset * scale));
+        EndPosTrans.position = startPos + (rot * (TrunkTopOffset * scale));
         this.angle = angle;
         this.scale = scale;
         this.depth = depth;
@@ -108,6 +110,6 @@ public class UIBranch : MonoBehaviour
     
     public Vector3 EndPos()
     {
-        return endPos;
+        return EndPosTrans.position;
     }
 }

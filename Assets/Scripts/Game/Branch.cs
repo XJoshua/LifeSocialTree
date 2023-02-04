@@ -29,6 +29,8 @@ namespace Game
 
         public string IndexPath = string.Empty;
 
+        public float Timer = 0; // 生长的时间 影响长度
+        
         public Branch()
         {
             Size = Service.Cfg.BaseConfig.BaseSize;
@@ -79,7 +81,6 @@ namespace Game
                 if (Life <= 0 || Life < LifeCost)
                 {
                     SetDead();
-
                 }
 
                 if (grow)
@@ -116,7 +117,8 @@ namespace Game
             }
             
             // todo 正常生长 变粗？
-
+            Timer += Time.deltaTime;
+            
             for (var i = 0; i < ChildBranches.Count; i++)
             {
                 ChildBranches[i].Update(grow);
