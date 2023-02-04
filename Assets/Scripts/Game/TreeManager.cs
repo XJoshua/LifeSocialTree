@@ -18,6 +18,7 @@ public class TreeManager
     {
         TotalTime = 0;
         ParentBranch = Branch.CreateRootBranch();
+        TheGame.Get().UITreeMng.CreateRootBranch(ParentBranch);
     }
 
     // the game 调用

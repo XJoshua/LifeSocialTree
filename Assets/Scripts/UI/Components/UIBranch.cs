@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game;
@@ -27,6 +28,8 @@ public class UIBranch : MonoBehaviour
     public UITreeManager UITreeMng => TheGame.Get().UITreeMng;
 
     public Transform EndPosTrans;
+
+    private Branch branchData;
     
     public void UpdateSize(float startSize, float endSize)
     {
@@ -58,6 +61,38 @@ public class UIBranch : MonoBehaviour
         }
     }
 
+    private void OnMouseDown()
+    {
+        if (ParentBranch == null) return;
+        
+        Debug.Log("try clip branch " + branchData);
+        
+        branchData.TryClip();
+        
+        // 被剪掉的表现
+        Clip();
+    }
+
+    public void Clip()
+    {
+        // 被剪掉的表现
+        for (int i = 0; i < ChildBranches.Count; i++)
+        {
+            ChildBranches[i].Clip();
+        }
+
+        for (int i = 0; i < ParentBranch.ChildBranches.Count; i++)
+        {
+            if (ParentBranch.ChildBranches[i] == this)
+            {
+                ParentBranch.ChildBranches.RemoveAt(i);
+                break;
+            }
+        }
+        
+        Destroy(this.gameObject);
+    }
+    
     public void Refresh(Branch branchData)
     {
         // todo update branch info
@@ -87,13 +122,17 @@ public class UIBranch : MonoBehaviour
         }
     }
     
-    public void CreateInfo(Vector3 startPos, float angle, float scale, int depth)
+    public void CreateInfo(Vector3 startPos, float angle, float scale, int depth, Branch data, UIBranch parent)
     {
+        branchData = data;
+        
         Quaternion rot = Quaternion.Euler(0, 0, angle);
         //EndPosTrans.position = startPos + (rot * (TrunkTopOffset * scale));
         this.angle = angle;
         this.scale = scale;
         this.depth = depth;
+
+        ParentBranch = parent;
     }
 
     public List<UIBranch> GetChild()
@@ -112,5 +151,10 @@ public class UIBranch : MonoBehaviour
     public Vector3 EndPos()
     {
         return EndPosTrans.position;
+    }
+
+    public Branch GetBranchData()
+    {
+        return branchData;
     }
 }

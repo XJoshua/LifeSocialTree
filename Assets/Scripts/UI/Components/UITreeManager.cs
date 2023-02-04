@@ -61,9 +61,13 @@ namespace Game
         void Start()
         {
             root = transform;
-            RootBranch = CreateBranch(root.position, 0, 1.0f, 0);
         }
 
+        public void CreateRootBranch(Branch branch)
+        {
+            RootBranch = CreateBranch(root.position, 0, 1.0f, 0, branch, null);
+        }
+        
         public void Clear()
         {
             if (trunks.Count > 0)
@@ -105,18 +109,18 @@ namespace Game
             var child1 = CreateBranch(topPos,
                 parent.angle - Parms.branchAngle + Random.Range(-Parms.angleRandom, Parms.angleRandom),
                 parent.scale - (Parms.scaleChange + Random.Range(0, Parms.scaleRandom)),
-                parent.depth + 1);
+                parent.depth + 1, parent.GetBranchData().ChildBranches[0], parent);
             
             //make a right branch
             var child2 = CreateBranch(topPos,
                 parent.angle + Parms.branchAngle + Random.Range(-Parms.angleRandom, Parms.angleRandom),
                 parent.scale - (Parms.scaleChange + Random.Range(0, Parms.scaleRandom)),
-                parent.depth + 1);
+                parent.depth + 1,  parent.GetBranchData().ChildBranches[1], parent);
 
             parent.AddBranchChild(child1, child2);
         }
         
-        UIBranch CreateBranch(Vector3 startPos, float angle, float scale, int depth)
+        UIBranch CreateBranch(Vector3 startPos, float angle, float scale, int depth, Branch data, UIBranch parent)
         {
             // Debug.Log("Create UI branch");
             
@@ -128,7 +132,7 @@ namespace Game
             uiBranch.gameObject.SetActive(true);
             uiBranch.transform.localScale = new Vector3(scale, 0, 1);
 
-            uiBranch.CreateInfo(startPos, angle, scale, depth);
+            uiBranch.CreateInfo(startPos, angle, scale, depth, data, parent);
             
             trunks.Add(uiBranch);
             return uiBranch;

@@ -99,6 +99,7 @@ namespace Game
 
                         Sleep = true;
                         BranchRate += Service.Cfg.BaseConfig.BranchRate;
+                        Life = 0;
                         return;
                     }
                     else
@@ -157,6 +158,24 @@ namespace Game
             }
         }
 
+        public bool CheckAlive()
+        {
+            if (ChildBranches.Count > 0)
+            {
+                var alive = false;
+                for (int i = 0; i < ChildBranches.Count; i++)
+                {
+                    alive = alive || ChildBranches[i].CheckAlive();
+                }
+
+                return alive;
+            }
+            else
+            {
+                return !Dead && !Sleep;
+            }
+        }
+        
         public void SetDead()
         {
             Dead = true;
@@ -186,6 +205,105 @@ namespace Game
         //     return result;
         // }
 
+        public void TryClip()
+        {
+            var life = GetLife();
+            
+            ParentBranch.GetClipLife(life, this);
+            
+            Clip();
+        }
+
+        // 获得这个分支剩余的生命值
+        public float GetLife()
+        {
+            float life = 0f;
+            
+            if (ChildBranches.Count > 0)
+            {
+                for (int i = 0; i < ChildBranches.Count ; i++)
+                {
+                    life += ChildBranches[i].GetLife();
+                }
+            }
+            else
+            {
+                life = this.Life;
+            }
+
+            return life;
+        }
+        
+        // 尝试获得生命值
+        public void GetClipLife(float life, Branch clipedBranch)
+        {
+            var gotLife = life * GameConfig.ClipLifeTransferLeft;
+            
+            var list = new List<Branch>();
+
+            if (ChildBranches.Count > 0)
+            {
+                for (int i = 0; i < ChildBranches.Count; i++)
+                {
+                    if (ChildBranches[i] != clipedBranch)
+                    {
+                        ChildBranches[i].GetAllAliveChildBranch(list);
+                    }
+                }
+            }
+            
+            if (list.Count > 0)
+            {
+                var divLife = life / list.Count;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    list[i].Life += divLife;
+                }
+            }
+            else
+            {
+                ParentBranch.GetClipLife(gotLife, this);
+            }
+        }
+
+        public void GetAllAliveChildBranch(List<Branch> list)
+        {
+            if (ChildBranches.Count > 0)
+            {
+                for (int i = 0; i < ChildBranches.Count; i++)
+                {
+                    ChildBranches[i].GetAllAliveChildBranch(list);
+                }
+            }
+            else
+            {
+                if (!Dead && !Sleep)
+                {
+                    list.Add(this);
+                }
+            }
+        }
+
+        public void Clip()
+        {
+            this.Dead = true;
+            
+            // 被剪掉的表现
+            for (int i = 0; i < ChildBranches.Count; i++)
+            {
+                ChildBranches[i].Clip();
+            }
+
+            for (int i = 0; i < ParentBranch.ChildBranches.Count; i++)
+            {
+                if (ParentBranch.ChildBranches[i] == this)
+                {
+                    ParentBranch.ChildBranches.RemoveAt(i);
+                    break;
+                }
+            }
+        }
+        
         public override string ToString()
         {
             return $"Path:{IndexPath} Life:{Life} LifeCost:{LifeCost} BranchRate:{BranchRate} EventRate:{EventRate}";
