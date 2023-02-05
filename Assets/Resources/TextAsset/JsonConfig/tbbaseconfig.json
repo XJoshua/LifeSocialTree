@@ -8,8 +8,8 @@
     "base_life": 500,
     "base_cost": 6,
     "branch_rate": 0.2,
-    "branch_rate_add": 0.03,
+    "branch_rate_add": 0.07,
     "event_rate": 0.2,
-    "event_rate_add": 0.1
+    "event_rate_add": 0.2
   }
 ]

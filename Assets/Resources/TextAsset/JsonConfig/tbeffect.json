@@ -4,7 +4,7 @@
     "life_add": 0,
     "cost_add": 0,
     "event_add": 1,
-    "branch_add": -0.3
+    "branch_add": 0
   },
   {
     "id": "effect_1010",
@@ -57,9 +57,9 @@
   },
   {
     "id": "effect_109",
-    "life_add": -20,
-    "cost_add": 0,
-    "event_add": 1,
-    "branch_add": 1
+    "life_add": -40,
+    "cost_add": 0.2,
+    "event_add": 0.3,
+    "branch_add": 0.4
   }
 ]
