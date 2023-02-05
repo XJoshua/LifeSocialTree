@@ -22,8 +22,12 @@ public class UICharacter : MonoBehaviour
     {
         var character = Service.Cfg.GetCfgCharacter(id);
 
+        transform.localScale = new Vector3(character.FrameSize, character.FrameSize, character.FrameSize);
+        
         NameText.text = character.Name;
-        RelationShipText.text = $"{character.Relationship} · {character.Desc}";
+
+        var inter = character.Relationship.IsNullOrEmpty() ? "" : " · ";
+        RelationShipText.text = $"{character.Relationship}{inter}{character.Desc}";
 
         var showJob = !character.Job.IsNullOrEmpty();
         JobObj.SetActive(showJob);

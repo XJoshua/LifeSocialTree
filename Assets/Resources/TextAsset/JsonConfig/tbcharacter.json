@@ -9,6 +9,7 @@
     "desc": "xxx",
     "job": "学生",
     "effect": "effect_101",
+    "frame_size": 1.2,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -49,6 +50,7 @@
     "desc": "xxx",
     "job": "学生",
     "effect": "effect_102",
+    "frame_size": 1.2,
     "min_tree_time": 10,
     "max_tree_time": 50,
     "flag_conditions": [],
@@ -64,6 +66,7 @@
     "desc": "依赖",
     "job": "",
     "effect": "",
+    "frame_size": 1.2,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -81,6 +84,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -98,6 +102,7 @@
     "desc": "好奇",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -115,6 +120,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "effect_101",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -132,6 +138,7 @@
     "desc": "超喜欢",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -157,6 +164,7 @@
     "desc": "依赖",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -182,6 +190,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": 10,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -199,6 +208,7 @@
     "desc": "思念",
     "job": "",
     "effect": "effect_102",
+    "frame_size": 1,
     "min_tree_time": 10,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -224,6 +234,7 @@
     "desc": "害怕",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": 10,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -249,6 +260,7 @@
     "desc": "熟悉",
     "job": "",
     "effect": "effect_104",
+    "frame_size": 1,
     "min_tree_time": 15,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -274,6 +286,7 @@
     "desc": "熟悉",
     "job": "收银员",
     "effect": "effect_104",
+    "frame_size": 1,
     "min_tree_time": 15,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -299,6 +312,7 @@
     "desc": "超喜欢",
     "job": "",
     "effect": "effect_106",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": 30,
     "flag_conditions": [
@@ -324,6 +338,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "effect_105",
+    "frame_size": 1,
     "min_tree_time": 20,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -341,6 +356,7 @@
     "desc": "熟悉",
     "job": "",
     "effect": "effect_105",
+    "frame_size": 1,
     "min_tree_time": 20,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -366,6 +382,7 @@
     "desc": "疏远",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -391,6 +408,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -416,6 +434,7 @@
     "desc": "陌生",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [],
@@ -433,6 +452,7 @@
     "desc": "害怕",
     "job": "",
     "effect": "effect_109",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -458,6 +478,7 @@
     "desc": "恐惧",
     "job": "",
     "effect": "effect_109",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -483,6 +504,7 @@
     "desc": "恐惧",
     "job": "",
     "effect": "effect_109",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -508,6 +530,7 @@
     "desc": "陌生",
     "job": "游乐园工作人员",
     "effect": "effect_101",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -547,6 +570,7 @@
     "desc": "陌生",
     "job": "游乐园工作人员",
     "effect": "effect_101",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -572,6 +596,7 @@
     "desc": "亲近",
     "job": "游乐园工作人员",
     "effect": "effect_101",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -597,6 +622,7 @@
     "desc": "依赖",
     "job": "",
     "effect": "effect_101",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -622,6 +648,7 @@
     "desc": "思念",
     "job": "",
     "effect": "effect_107",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -647,6 +674,7 @@
     "desc": "依赖",
     "job": "",
     "effect": "effect_107",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -670,6 +698,7 @@
     "desc": "熟悉",
     "job": "",
     "effect": "effect_102",
+    "frame_size": 1,
     "min_tree_time": 30,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -702,6 +731,7 @@
     "desc": "信任",
     "job": "",
     "effect": "effect_102",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -727,6 +757,7 @@
     "desc": "怨恨",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -752,6 +783,7 @@
     "desc": "思念",
     "job": "",
     "effect": "effect_105",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -777,6 +809,7 @@
     "desc": "好奇",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -802,6 +835,7 @@
     "desc": "讨厌",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -827,6 +861,7 @@
     "desc": "讨厌",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -852,6 +887,7 @@
     "desc": "好奇",
     "job": "",
     "effect": "",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -877,6 +913,7 @@
     "desc": "熟悉",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -902,6 +939,7 @@
     "desc": "依赖",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
@@ -927,6 +965,7 @@
     "desc": "熟悉",
     "job": "",
     "effect": "effect_103",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [

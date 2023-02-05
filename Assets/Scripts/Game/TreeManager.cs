@@ -67,6 +67,8 @@ public class TreeManager
     {
         var character = GetCharacterEvent(branch);
 
+        if (character == null) return null;
+        
         if (!CharacterDict.ContainsKey(character.Id))
         {
             CharacterDict.Add(character.Id, true);
@@ -119,6 +121,7 @@ public class TreeManager
                 finalList.Clear();
                 priority = list[i].Priority;
                 allWeight += list[i].Weight;
+                finalList.Add(list[i]);
             }
             else if (list[i].Priority == priority)
             {
@@ -138,7 +141,7 @@ public class TreeManager
             allWeight -= finalList[i].Weight;
         }
 
-        return finalList[0];
+        return null;
     }
 
     public bool CheckTreeLifeTime(float min, float max)
