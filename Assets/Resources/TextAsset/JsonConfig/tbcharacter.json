@@ -8,7 +8,7 @@
     "relationship": "朋友",
     "desc": "xxx",
     "job": "学生",
-    "effect": "effect_1001",
+    "effect": "effect_101",
     "flag_conditions": [
       {
         "id": "flag_101",
@@ -34,6 +34,23 @@
         "min_time": 0,
         "max_time": 0
       }
+    ],
+    "active_flag": [
+      "flag_101",
+      "flag_102"
     ]
+  },
+  {
+    "id": "char_1002",
+    "name": "AA",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "朋友",
+    "desc": "xxx",
+    "job": "学生",
+    "effect": "effect_102",
+    "flag_conditions": [],
+    "active_flag": []
   }
 ]
