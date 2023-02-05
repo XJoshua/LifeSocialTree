@@ -19,6 +19,7 @@ public sealed partial class BaseConfig :  Bright.Config.BeanBase
     public BaseConfig(JSONNode _json) 
     {
         { if(!_json["id"].IsString) { throw new SerializationException(); }  Id = _json["id"]; }
+        { if(!_json["branch_life"].IsNumber) { throw new SerializationException(); }  BranchLife = _json["branch_life"]; }
         { if(!_json["overall_grow"].IsNumber) { throw new SerializationException(); }  OverallGrow = _json["overall_grow"]; }
         { if(!_json["round_time"].IsNumber) { throw new SerializationException(); }  RoundTime = _json["round_time"]; }
         { if(!_json["base_size"].IsNumber) { throw new SerializationException(); }  BaseSize = _json["base_size"]; }
@@ -31,9 +32,10 @@ public sealed partial class BaseConfig :  Bright.Config.BeanBase
         PostInit();
     }
 
-    public BaseConfig(string id, float overall_grow, float round_time, float base_size, float base_life, float base_cost, float branch_rate, float branch_rate_add, float event_rate, float event_rate_add ) 
+    public BaseConfig(string id, float branch_life, float overall_grow, float round_time, float base_size, float base_life, float base_cost, float branch_rate, float branch_rate_add, float event_rate, float event_rate_add ) 
     {
         this.Id = id;
+        this.BranchLife = branch_life;
         this.OverallGrow = overall_grow;
         this.RoundTime = round_time;
         this.BaseSize = base_size;
@@ -55,6 +57,10 @@ public sealed partial class BaseConfig :  Bright.Config.BeanBase
     /// 这是id
     /// </summary>
     public string Id { get; private set; }
+    /// <summary>
+    /// 分支后子枝的生命值
+    /// </summary>
+    public float BranchLife { get; private set; }
     public float OverallGrow { get; private set; }
     public float RoundTime { get; private set; }
     public float BaseSize { get; private set; }
@@ -81,6 +87,7 @@ public sealed partial class BaseConfig :  Bright.Config.BeanBase
     {
         return "{ "
         + "Id:" + Id + ","
+        + "BranchLife:" + BranchLife + ","
         + "OverallGrow:" + OverallGrow + ","
         + "RoundTime:" + RoundTime + ","
         + "BaseSize:" + BaseSize + ","

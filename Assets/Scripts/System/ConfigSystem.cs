@@ -58,7 +58,7 @@ namespace GameSystem
             }
             catch (Exception e)
             {
-                Debug.LogError($"GetCfgPlant id: {id} {e}");
+                Debug.LogError($"GetCfgEffect id: {id} {e}");
                 throw;
             }
         

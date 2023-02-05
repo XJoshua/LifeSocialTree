@@ -20,27 +20,19 @@ public sealed partial class EffectConfig :  Bright.Config.BeanBase
     {
         { if(!_json["id"].IsString) { throw new SerializationException(); }  Id = _json["id"]; }
         { if(!_json["life_add"].IsNumber) { throw new SerializationException(); }  LifeAdd = _json["life_add"]; }
-        { if(!_json["life_minus"].IsNumber) { throw new SerializationException(); }  LifeMinus = _json["life_minus"]; }
         { if(!_json["cost_add"].IsNumber) { throw new SerializationException(); }  CostAdd = _json["cost_add"]; }
-        { if(!_json["cost_minus"].IsNumber) { throw new SerializationException(); }  CostMinus = _json["cost_minus"]; }
         { if(!_json["event_add"].IsNumber) { throw new SerializationException(); }  EventAdd = _json["event_add"]; }
-        { if(!_json["event_minus"].IsNumber) { throw new SerializationException(); }  EventMinus = _json["event_minus"]; }
         { if(!_json["branch_add"].IsNumber) { throw new SerializationException(); }  BranchAdd = _json["branch_add"]; }
-        { if(!_json["branch_minus"].IsNumber) { throw new SerializationException(); }  BranchMinus = _json["branch_minus"]; }
         PostInit();
     }
 
-    public EffectConfig(string id, float life_add, float life_minus, float cost_add, float cost_minus, float event_add, float event_minus, float branch_add, float branch_minus ) 
+    public EffectConfig(string id, float life_add, float cost_add, float event_add, float branch_add ) 
     {
         this.Id = id;
         this.LifeAdd = life_add;
-        this.LifeMinus = life_minus;
         this.CostAdd = cost_add;
-        this.CostMinus = cost_minus;
         this.EventAdd = event_add;
-        this.EventMinus = event_minus;
         this.BranchAdd = branch_add;
-        this.BranchMinus = branch_minus;
         PostInit();
     }
 
@@ -58,33 +50,17 @@ public sealed partial class EffectConfig :  Bright.Config.BeanBase
     /// </summary>
     public float LifeAdd { get; private set; }
     /// <summary>
-    /// 减少生命值
-    /// </summary>
-    public float LifeMinus { get; private set; }
-    /// <summary>
     /// 增加衰减值
     /// </summary>
     public float CostAdd { get; private set; }
-    /// <summary>
-    /// 减少衰减值
-    /// </summary>
-    public float CostMinus { get; private set; }
     /// <summary>
     /// 增加相遇可能性
     /// </summary>
     public float EventAdd { get; private set; }
     /// <summary>
-    /// 减少相遇可能性
-    /// </summary>
-    public float EventMinus { get; private set; }
-    /// <summary>
     /// 增加分支可能性
     /// </summary>
     public float BranchAdd { get; private set; }
-    /// <summary>
-    /// 减少分支可能性
-    /// </summary>
-    public float BranchMinus { get; private set; }
 
     public const int __ID__ = -682668973;
     public override int GetTypeId() => __ID__;
@@ -103,13 +79,9 @@ public sealed partial class EffectConfig :  Bright.Config.BeanBase
         return "{ "
         + "Id:" + Id + ","
         + "LifeAdd:" + LifeAdd + ","
-        + "LifeMinus:" + LifeMinus + ","
         + "CostAdd:" + CostAdd + ","
-        + "CostMinus:" + CostMinus + ","
         + "EventAdd:" + EventAdd + ","
-        + "EventMinus:" + EventMinus + ","
         + "BranchAdd:" + BranchAdd + ","
-        + "BranchMinus:" + BranchMinus + ","
         + "}";
     }
     

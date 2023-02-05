@@ -67,7 +67,7 @@ public class TreeManager
     {
         var character = GetCharacterEvent(branch);
 
-        if (CharacterDict.ContainsKey(character.Id))
+        if (!CharacterDict.ContainsKey(character.Id))
         {
             CharacterDict.Add(character.Id, true);
         }

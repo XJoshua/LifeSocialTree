@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using cfg;
 using cfg.config;
+using QFramework;
 using UnityEngine;
 
 namespace Game
@@ -55,7 +57,7 @@ namespace Game
                 Index = index,
 
                 Size = parentBranch.Size * 0.5f,
-                Life = parentBranch.Life * 0.5f,
+                Life = parentBranch.Life * Service.Cfg.BaseConfig.BranchLife,
                 LifeCost = parentBranch.LifeCost,
                 BranchRate = parentBranch.BranchRate,
                 EventRate = parentBranch.EventRate,
@@ -124,6 +126,7 @@ namespace Game
                                 Debug.Log($"{IndexPath} Event Happen {character.Id}");
                                 CharacterList.Add(character.Id);
                                 ActiveCharacterFlag(character, this);
+                                ActiveEffect(character.Effect, this);
                             }
                             else
                             {
@@ -355,6 +358,36 @@ namespace Game
                 var flag = new Flag(character.ActiveFlag[i], Time.time);
                 branch.FlagList.Add(flag);
                 TheGame.Get().TreeMng.AddFlag(flag);
+            }
+        }
+
+        public void ActiveEffect(string effectId, Branch branch)
+        {
+            if (effectId.IsNullOrEmpty())
+            {
+                return;
+            }
+            
+            var effectConfig = Service.Cfg.GetCfgEffect(effectId);
+
+            if (Math.Abs(effectConfig.LifeAdd) > float.Epsilon)
+            {
+                branch.Life += effectConfig.LifeAdd;
+            }
+            
+            if (Math.Abs(effectConfig.CostAdd) > float.Epsilon)
+            {
+                branch.LifeCost += effectConfig.CostAdd;
+            }
+            
+            if (Math.Abs(effectConfig.EventAdd) > float.Epsilon)
+            {
+                branch.EventRate += effectConfig.EventAdd;
+            }
+            
+            if (Math.Abs(effectConfig.BranchAdd) > float.Epsilon)
+            {
+                branch.BranchRate += effectConfig.BranchAdd;
             }
         }
         

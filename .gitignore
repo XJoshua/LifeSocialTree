@@ -65,3 +65,5 @@ Assets/QFramework/Toolkits/*/Example
 Assets/QFramework/Toolkits/_CoreKit/*/Examples
 LubanConfig/Datas/~$*.xlsx
 Recordings/
+AssetBundles/*
+Assets/StreamingAssets/AssetBundles/*
