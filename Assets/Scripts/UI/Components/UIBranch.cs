@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Game;
+using TMPro;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -32,7 +33,16 @@ public class UIBranch : MonoBehaviour
     private Branch branchData;
     
     public List<UICharacter> Characters = new List<UICharacter>();
-    
+
+    public TextMeshPro LifeText;
+
+    private void Awake()
+    {
+#if !UNITY_EDITOR
+        LifeText.gameObject.SetActive(false);
+#endif  
+    }
+
     public void UpdateSize(float startSize, float endSize)
     {
         // Mat.SetFloat(StartSize, startSize);
@@ -119,6 +129,10 @@ public class UIBranch : MonoBehaviour
 
         if (!branchData.Sleep)
         {
+#if UNITY_EDITOR
+            LifeText.text = ((int)branchData.Life).ToString();
+#endif  
+            
             transform.localScale = GameConfig.GetBranchScale(branchData.Timer, transform.localScale);
             TheGame.Get().CheckMoveCamera(EndPosTrans.position);
         }
@@ -133,6 +147,9 @@ public class UIBranch : MonoBehaviour
         
         if (branchData.ChildBranches.Count > 0)
         {
+#if UNITY_EDITOR
+            LifeText.text = String.Empty;
+#endif            
             // 创建分支
             if (ChildBranches.Count == 0)
             {

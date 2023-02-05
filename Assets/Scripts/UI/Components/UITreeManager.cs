@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using cfg;
 using QFramework;
 using UnityEngine.Serialization;
-
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -138,6 +139,7 @@ namespace Game
             UIBranch uiBranch = GameObject.Instantiate(UiBranchPrefab, startPos, rot);
             uiBranch.transform.SetParent(TrunkRoot);
             uiBranch.gameObject.SetActive(true);
+            scale = Math.Max(0.05f, scale);
             uiBranch.transform.localScale = new Vector3(scale, 0, 1);
 
             uiBranch.CreateInfo(startPos, angle, scale, depth, data, parent);
