@@ -169,32 +169,32 @@ public class TreeManager
                 return false;
             }
             
-            // 判断是否在父根中不存在
-            if (condition.InParent)
-            {
-                var tempBranch = branch;
-                if (tempBranch.CheckFlag(condition))
-                {
-                    return false;
-                }
-                
-                while (tempBranch.ParentBranch != null)
-                {
-                    tempBranch = tempBranch.ParentBranch;
-                    if (tempBranch.CheckFlag(condition))
-                    {
-                        return false;
-                    }
-                }
-            }
+            // // 判断是否在父根中不存在
+            // if (condition.InParent)
+            // {
+            //     var tempBranch = branch;
+            //     if (tempBranch.CheckFlag(condition))
+            //     {
+            //         return false;
+            //     }
+            //     
+            //     while (tempBranch.ParentBranch != null)
+            //     {
+            //         tempBranch = tempBranch.ParentBranch;
+            //         if (tempBranch.CheckFlag(condition))
+            //         {
+            //             return false;
+            //         }
+            //     }
+            // }
 
             return true;
         }
         
         if (condition.Has)
         {
-            // 判断是否在父根中存在
-            if (!condition.InParent)
+            // 有 且在 parent 分支中
+            if (condition.InParent)
             {
                 var tempBranch = branch;
                 if (tempBranch.CheckFlag(condition))
@@ -210,35 +210,37 @@ public class TreeManager
                         return true;
                     }
                 }
+
+                return false;
             }
             else
             {
+                // 有 不需要在 parent 分支中
+                
                 if (!FlagDict.ContainsKey(condition.Id))
                 {
                     return false;
                 }
-
+                
                 var list = FlagDict[condition.Id];
                 
                 for (int i = 0; i < list.Count; i++)
                 {
                     if (condition.HasTime > 0 && (Time.time - list[i].AddTime) < condition.HasTime)
                     {
-                        break;
+                        continue;
                     }
                     
                     if (condition.Alive != list[i].Alive)
                     {
-                        break;
+                        continue;
                     }
-
+                
                     return true;
                 }
                 
                 return false;
             }
-
-            return false;
         }
         
         return true;
