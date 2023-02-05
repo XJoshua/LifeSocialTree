@@ -58,7 +58,7 @@ namespace Game
 
                 Size = parentBranch.Size * 0.5f,
                 Life = parentBranch.Life * Service.Cfg.BaseConfig.BranchLife,
-                LifeCost = parentBranch.LifeCost,
+                LifeCost = Service.Cfg.BaseConfig.BaseCost * 0.5f + parentBranch.LifeCost * 0.5f,
                 BranchRate = parentBranch.BranchRate,
                 EventRate = parentBranch.EventRate,
 
@@ -96,14 +96,14 @@ namespace Game
                     if (toBranch)
                     {
                         Debug.Log($"CreateBranch {this}");
+                        BranchRate = Service.Cfg.BaseConfig.BranchRate;
                         
                         for (int i = 0; i < 2; i++)
                         {
                             CreateChildBranch(i);
                         }
-
+                        
                         Sleep = true;
-                        BranchRate += Service.Cfg.BaseConfig.BranchRate;
                         Life = 0;
                         return;
                     }
@@ -378,6 +378,7 @@ namespace Game
             if (Math.Abs(effectConfig.CostAdd) > float.Epsilon)
             {
                 branch.LifeCost += effectConfig.CostAdd;
+                branch.LifeCost = Math.Max(branch.LifeCost, 0.2f);
             }
             
             if (Math.Abs(effectConfig.EventAdd) > float.Epsilon)
