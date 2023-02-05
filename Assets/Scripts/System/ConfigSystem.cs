@@ -49,12 +49,12 @@ namespace GameSystem
             return result;
         }
         
-        public cfg.FlagConfig GetCfgPlant(string id)
+        public cfg.EffectConfig GetCfgEffect(string id)
         {
-            cfg.FlagConfig result;
+            cfg.EffectConfig result;
             try
             {
-                result = Tables.TbFlag.Get(id);
+                result = Tables.TbEffect.Get(id);
             }
             catch (Exception e)
             {

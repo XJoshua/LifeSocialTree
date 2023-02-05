@@ -7,7 +7,7 @@
     "base_life": 1000,
     "base_cost": 5,
     "branch_rate": 0.3,
-    "branch_rate_add": 0.05,
+    "branch_rate_add": 0.1,
     "event_rate": 0.05,
     "event_rate_add": 0.05
   }

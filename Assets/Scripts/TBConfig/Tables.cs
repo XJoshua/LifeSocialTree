@@ -16,7 +16,7 @@ public sealed partial class Tables
 {
     public TbBaseConfig TbBaseConfig {get; }
     public TbCharacter TbCharacter {get; }
-    public TbFlag TbFlag {get; }
+    public TbEffect TbEffect {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -25,13 +25,13 @@ public sealed partial class Tables
         tables.Add("TbBaseConfig", TbBaseConfig);
         TbCharacter = new TbCharacter(loader("tbcharacter")); 
         tables.Add("TbCharacter", TbCharacter);
-        TbFlag = new TbFlag(loader("tbflag")); 
-        tables.Add("TbFlag", TbFlag);
+        TbEffect = new TbEffect(loader("tbeffect")); 
+        tables.Add("TbEffect", TbEffect);
         PostInit();
 
         TbBaseConfig.Resolve(tables); 
         TbCharacter.Resolve(tables); 
-        TbFlag.Resolve(tables); 
+        TbEffect.Resolve(tables); 
         PostResolve();
     }
 
@@ -39,7 +39,7 @@ public sealed partial class Tables
     {
         TbBaseConfig.TranslateText(translator); 
         TbCharacter.TranslateText(translator); 
-        TbFlag.TranslateText(translator); 
+        TbEffect.TranslateText(translator); 
     }
     
     partial void PostInit();

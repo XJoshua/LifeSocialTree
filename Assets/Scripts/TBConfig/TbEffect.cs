@@ -14,31 +14,31 @@ using SimpleJSON;
 namespace cfg
 { 
 
-public sealed partial class TbFlag
+public sealed partial class TbEffect
 {
-    private readonly Dictionary<string, FlagConfig> _dataMap;
-    private readonly List<FlagConfig> _dataList;
+    private readonly Dictionary<string, EffectConfig> _dataMap;
+    private readonly List<EffectConfig> _dataList;
     
-    public TbFlag(JSONNode _json)
+    public TbEffect(JSONNode _json)
     {
-        _dataMap = new Dictionary<string, FlagConfig>();
-        _dataList = new List<FlagConfig>();
+        _dataMap = new Dictionary<string, EffectConfig>();
+        _dataList = new List<EffectConfig>();
         
         foreach(JSONNode _row in _json.Children)
         {
-            var _v = FlagConfig.DeserializeFlagConfig(_row);
+            var _v = EffectConfig.DeserializeEffectConfig(_row);
             _dataList.Add(_v);
             _dataMap.Add(_v.Id, _v);
         }
         PostInit();
     }
 
-    public Dictionary<string, FlagConfig> DataMap => _dataMap;
-    public List<FlagConfig> DataList => _dataList;
+    public Dictionary<string, EffectConfig> DataMap => _dataMap;
+    public List<EffectConfig> DataList => _dataList;
 
-    public FlagConfig GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
-    public FlagConfig Get(string key) => _dataMap[key];
-    public FlagConfig this[string key] => _dataMap[key];
+    public EffectConfig GetOrDefault(string key) => _dataMap.TryGetValue(key, out var v) ? v : null;
+    public EffectConfig Get(string key) => _dataMap[key];
+    public EffectConfig this[string key] => _dataMap[key];
 
     public void Resolve(Dictionary<string, object> _tables)
     {

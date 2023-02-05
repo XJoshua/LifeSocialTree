@@ -1,0 +1,24 @@
+[
+  {
+    "id": "effect_101",
+    "life_add": 0,
+    "life_minus": 0,
+    "cost_add": 4,
+    "cost_minus": 0,
+    "event_add": 0,
+    "event_minus": 0,
+    "branch_add": 0,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_102",
+    "life_add": 0,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 0,
+    "event_add": 20,
+    "event_minus": 0,
+    "branch_add": 0,
+    "branch_minus": 0
+  }
+]

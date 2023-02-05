@@ -9,9 +9,31 @@
     "desc": "xxx",
     "job": "学生",
     "effect": "effect_1001",
-    "active_flag": [
-      "flag_1001",
-      "flag_1002"
+    "flag_conditions": [
+      {
+        "id": "flag_101",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      },
+      {
+        "id": "flag_102",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "min_time": 5,
+        "max_time": 20
+      },
+      {
+        "id": "flag_103",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "min_time": 0,
+        "max_time": 0
+      }
     ]
   }
 ]

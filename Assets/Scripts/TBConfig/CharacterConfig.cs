@@ -27,11 +27,11 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
         { if(!_json["desc"].IsString) { throw new SerializationException(); }  Desc = _json["desc"]; }
         { if(!_json["job"].IsString) { throw new SerializationException(); }  Job = _json["job"]; }
         { if(!_json["effect"].IsString) { throw new SerializationException(); }  Effect = _json["effect"]; }
-        { var __json0 = _json["active_flag"]; if(!__json0.IsArray) { throw new SerializationException(); } ActiveFlag = new System.Collections.Generic.List<string>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { string __v0;  { if(!__e0.IsString) { throw new SerializationException(); }  __v0 = __e0; }  ActiveFlag.Add(__v0); }   }
+        { var __json0 = _json["flag_conditions"]; if(!__json0.IsArray) { throw new SerializationException(); } FlagConditions = new System.Collections.Generic.List<config.FlagCondition>(__json0.Count); foreach(JSONNode __e0 in __json0.Children) { config.FlagCondition __v0;  { if(!__e0.IsObject) { throw new SerializationException(); }  __v0 = config.FlagCondition.DeserializeFlagCondition(__e0);  }  FlagConditions.Add(__v0); }   }
         PostInit();
     }
 
-    public CharacterConfig(string id, string name, string image, int priority, int weight, string relationship, string desc, string job, string effect, System.Collections.Generic.List<string> active_flag ) 
+    public CharacterConfig(string id, string name, string image, int priority, int weight, string relationship, string desc, string job, string effect, System.Collections.Generic.List<config.FlagCondition> flag_conditions ) 
     {
         this.Id = id;
         this.Name = name;
@@ -42,7 +42,7 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
         this.Desc = desc;
         this.Job = job;
         this.Effect = effect;
-        this.ActiveFlag = active_flag;
+        this.FlagConditions = flag_conditions;
         PostInit();
     }
 
@@ -66,18 +66,20 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
     public string Desc { get; private set; }
     public string Job { get; private set; }
     public string Effect { get; private set; }
-    public System.Collections.Generic.List<string> ActiveFlag { get; private set; }
+    public System.Collections.Generic.List<config.FlagCondition> FlagConditions { get; private set; }
 
     public const int __ID__ = 676994987;
     public override int GetTypeId() => __ID__;
 
     public  void Resolve(Dictionary<string, object> _tables)
     {
+        foreach(var _e in FlagConditions) { _e?.Resolve(_tables); }
         PostResolve();
     }
 
     public  void TranslateText(System.Func<string, string, string> translator)
     {
+        foreach(var _e in FlagConditions) { _e?.TranslateText(translator); }
     }
 
     public override string ToString()
@@ -92,7 +94,7 @@ public sealed partial class CharacterConfig :  Bright.Config.BeanBase
         + "Desc:" + Desc + ","
         + "Job:" + Job + ","
         + "Effect:" + Effect + ","
-        + "ActiveFlag:" + Bright.Common.StringUtil.CollectionToString(ActiveFlag) + ","
+        + "FlagConditions:" + Bright.Common.StringUtil.CollectionToString(FlagConditions) + ","
         + "}";
     }
     
