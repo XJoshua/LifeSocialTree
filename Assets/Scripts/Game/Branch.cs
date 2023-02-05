@@ -1,11 +1,7 @@
 ﻿using System.Collections.Generic;
 using cfg;
 using cfg.config;
-using DG.Tweening.Core.Easing;
-using SRF.UI.Layout;
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Game
 {
