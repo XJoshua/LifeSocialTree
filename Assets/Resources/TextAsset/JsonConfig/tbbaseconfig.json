@@ -2,14 +2,14 @@
   {
     "id": "base_config",
     "branch_life": 0.6,
-    "overall_grow": 0.05,
+    "overall_grow": 0.1,
     "round_time": 2,
     "base_size": 0.2,
     "base_life": 1000,
-    "base_cost": 5,
-    "branch_rate": 0.3,
-    "branch_rate_add": 0.1,
-    "event_rate": 0.05,
+    "base_cost": 2,
+    "branch_rate": 0.2,
+    "branch_rate_add": 0.03,
+    "event_rate": 0.2,
     "event_rate_add": 0.05
   }
 ]

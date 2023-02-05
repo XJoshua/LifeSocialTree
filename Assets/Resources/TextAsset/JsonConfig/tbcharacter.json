@@ -56,10 +56,10 @@
   },
   {
     "id": "char_1003",
-    "name": "妈妈名",
+    "name": "妈妈",
     "image": "char_icon_1003",
     "priority": 2,
-    "weight": 100,
+    "weight": 200,
     "relationship": "母亲",
     "desc": "依赖",
     "job": "",
@@ -73,10 +73,10 @@
   },
   {
     "id": "char_1004",
-    "name": "舅妈名",
+    "name": "舅妈",
     "image": "char_icon_1004",
     "priority": 2,
-    "weight": 20,
+    "weight": 200,
     "relationship": "舅妈",
     "desc": "陌生",
     "job": "",
@@ -90,7 +90,7 @@
   },
   {
     "id": "char_1005",
-    "name": "父亲名",
+    "name": "普鲁特",
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 100,
@@ -111,7 +111,7 @@
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 50,
-    "relationship": "同学",
+    "relationship": "幼儿园同学",
     "desc": "陌生",
     "job": "",
     "effect": "effect_101",
@@ -153,7 +153,7 @@
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 100,
-    "relationship": "同学",
+    "relationship": "无话不谈",
     "desc": "依赖",
     "job": "",
     "effect": "",
@@ -174,7 +174,7 @@
   },
   {
     "id": "char_1009",
-    "name": "小学老师名",
+    "name": "罗菲",
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 30,
@@ -191,7 +191,7 @@
   },
   {
     "id": "char_1010",
-    "name": "妈妈名",
+    "name": "康拉",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 100,
@@ -216,7 +216,7 @@
   },
   {
     "id": "char_1011",
-    "name": "父亲名",
+    "name": "普鲁特",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 50,
@@ -241,7 +241,7 @@
   },
   {
     "id": "char_1012",
-    "name": "舅妈名",
+    "name": "戴拉",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 100,
@@ -266,7 +266,7 @@
   },
   {
     "id": "char_1013",
-    "name": "舅舅名",
+    "name": "卡雷尔",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 50,
@@ -316,7 +316,7 @@
   },
   {
     "id": "char_1015",
-    "name": "二舅妈名",
+    "name": "二舅妈",
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 1000,
@@ -333,7 +333,7 @@
   },
   {
     "id": "char_1016",
-    "name": "二舅妈名",
+    "name": "二舅妈",
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 1000,
@@ -358,7 +358,7 @@
   },
   {
     "id": "char_1017",
-    "name": "父亲名",
+    "name": "普鲁特",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 100,
@@ -383,7 +383,7 @@
   },
   {
     "id": "char_1018",
-    "name": "二舅舅名",
+    "name": "二舅舅",
     "image": "char_icon_1002",
     "priority": 2,
     "weight": 1000,
@@ -504,7 +504,7 @@
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 10000,
-    "relationship": "吉祥大玩偶",
+    "relationship": "吉祥物",
     "desc": "陌生",
     "job": "游乐园工作人员",
     "effect": "effect_101",
@@ -543,7 +543,7 @@
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 10000,
-    "relationship": "吉祥大玩偶",
+    "relationship": "吉祥物",
     "desc": "陌生",
     "job": "游乐园工作人员",
     "effect": "effect_101",
@@ -564,12 +564,12 @@
   },
   {
     "id": "char_1024",
-    "name": "唐老鸭",
+    "name": "园长",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 10000,
     "relationship": "园长",
-    "desc": "依赖",
+    "desc": "亲近",
     "job": "游乐园工作人员",
     "effect": "effect_101",
     "min_tree_time": 30,
@@ -614,7 +614,7 @@
   },
   {
     "id": "char_1026",
-    "name": "妈妈名",
+    "name": "莎娜",
     "image": "char_icon_1002",
     "priority": 1,
     "weight": 10000,
@@ -659,5 +659,287 @@
       }
     ],
     "active_flag": []
+  },
+  {
+    "id": "char_1028",
+    "name": "二舅舅名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "二舅舅",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "effect_102",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1023",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1019",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 3
+      }
+    ],
+    "active_flag": [
+      "flag_1028"
+    ]
+  },
+  {
+    "id": "char_1029",
+    "name": "二舅妈名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "二舅妈",
+    "desc": "信任",
+    "job": "",
+    "effect": "effect_102",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1028",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1029"
+    ]
+  },
+  {
+    "id": "char_1030",
+    "name": "父亲名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "父亲",
+    "desc": "怨恨",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1028",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1030"
+    ]
+  },
+  {
+    "id": "char_1031",
+    "name": "妈妈名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "母亲",
+    "desc": "思念",
+    "job": "",
+    "effect": "effect_105",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1028",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1031"
+    ]
+  },
+  {
+    "id": "char_1032",
+    "name": "同学名1",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "同学",
+    "desc": "好奇",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1030",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1032"
+    ]
+  },
+  {
+    "id": "char_1033",
+    "name": "混混名1",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "校霸",
+    "desc": "讨厌",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1032",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1033"
+    ]
+  },
+  {
+    "id": "char_1034",
+    "name": "混混名2",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "学生",
+    "desc": "讨厌",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1032",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1034"
+    ]
+  },
+  {
+    "id": "char_1035",
+    "name": "混混名3",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "混混",
+    "desc": "好奇",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1030",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1035"
+    ]
+  },
+  {
+    "id": "char_1036",
+    "name": "混混名2",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "混混",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1034",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1036"
+    ]
+  },
+  {
+    "id": "char_1037",
+    "name": "混混名3",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "学生",
+    "desc": "依赖",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1035",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1037"
+    ]
+  },
+  {
+    "id": "char_1038",
+    "name": "混混名4",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "混混",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1030",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1038"
+    ]
   }
 ]
