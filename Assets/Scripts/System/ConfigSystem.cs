@@ -33,7 +33,7 @@ namespace GameSystem
             baseConfig = Tables.TbBaseConfig.Get(GameConfig.BaseConfigId);
         }
         
-        public cfg.CharacterConfig GetCfgWeather(string id)
+        public cfg.CharacterConfig GetCfgCharacter(string id)
         {
             cfg.CharacterConfig result;
             try
@@ -72,7 +72,7 @@ namespace GameSystem
         
         public Sprite GetCharacterIcon(string id)
         {
-            var prop = GetCfgWeather(id);
+            var prop = GetCfgCharacter(id);
             var spriteAtlas = mResLoader.LoadSync<SpriteAtlas>(GameConfig.IconAtlasPath);
             var icon = spriteAtlas.GetSprite(prop.Image);
             mResLoader.AddObjectForDestroyWhenRecycle2Cache(icon);

@@ -8,7 +8,7 @@ public class GameConfig
 
     public static string BaseConfigId = "base_config";
 
-    public static string IconAtlasPath = "IconsAtlas";
+    public static string IconAtlasPath = "UIIconAtlas";
 
     public static string DefaultBtnSound = "";
 

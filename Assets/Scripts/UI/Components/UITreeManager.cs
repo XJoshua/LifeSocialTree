@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using cfg;
 using QFramework;
 using UnityEditor;
 using UnityEngine.Serialization;
@@ -41,9 +42,11 @@ namespace Game
     public class UITreeManager : MonoBehaviour
     {
         public Transform TrunkRoot;
-
         public UIBranch UiBranchPrefab;
 
+        public Transform CharacterRoot;
+        public UICharacter UiCharacterPrefab;
+        
         public Vector3 TrunkTopOffset = new Vector3(0, 1, 0);
 
         //Note: careful with "scaleChange" and especially "max depth" - it can make the algorithm take a VERY long time.
@@ -138,6 +141,17 @@ namespace Game
             return uiBranch;
         }
 
+        public UICharacter CreateUiCharacter(Vector3 pos, string id)
+        {
+            UICharacter uiCharacter = GameObject.Instantiate(UiCharacterPrefab, CharacterRoot, true);
+            uiCharacter.transform.position = pos;
+            
+            uiCharacter.Setup(id);
+            
+            uiCharacter.gameObject.SetActive(true);
+            return uiCharacter;
+        }
+        
         void UpdateBranch()
         {
             

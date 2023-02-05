@@ -31,6 +31,8 @@ public class UIBranch : MonoBehaviour
 
     private Branch branchData;
     
+    public List<UICharacter> Characters = new List<UICharacter>();
+    
     public void UpdateSize(float startSize, float endSize)
     {
         // Mat.SetFloat(StartSize, startSize);
@@ -105,8 +107,14 @@ public class UIBranch : MonoBehaviour
             TheGame.Get().CheckMoveCamera(EndPosTrans.position);
         }
         
-        // todo 处理事件
-
+        // 创建人物头像
+        if (branchData.CharacterList.Count > Characters.Count)
+        {
+            var characterId = branchData.CharacterList[branchData.CharacterList.Count - 1];
+            var uiCharacter = UITreeMng.CreateUiCharacter(EndPosTrans.position, characterId);
+            Characters.Add(uiCharacter);
+        }
+        
         if (branchData.ChildBranches.Count > 0)
         {
             // 创建分支

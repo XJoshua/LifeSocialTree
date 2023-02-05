@@ -1,4 +1,8 @@
 ﻿using System.Collections.Generic;
+using cfg;
+using cfg.config;
+using DG.Tweening.Core.Easing;
+using SRF.UI.Layout;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -30,6 +34,9 @@ namespace Game
         public string IndexPath = string.Empty;
 
         public float Timer = 0; // 生长的时间 影响长度
+        
+        public List<Flag> FlagList = new List<Flag>();
+        public List<string> CharacterList = new List<string>();
         
         public Branch()
         {
@@ -113,9 +120,19 @@ namespace Game
 
                         if (toEvent)
                         {
-                            // todo 
-                            Debug.Log($"{IndexPath} Event Happen!");
-
+                            var character = TheGame.Get().TreeMng.GetCharacterEvent(this);
+                            
+                            if (character != null)
+                            {
+                                Debug.Log($"{IndexPath} Event Happen {character.Id}");
+                                CharacterList.Add(character.Id);
+                                ActiveCharacterFlag(character, this);
+                            }
+                            else
+                            {
+                                Debug.Log($"{IndexPath} Event Happen no character got");
+                            }
+                            
                             EventRate = Service.Cfg.BaseConfig.EventRate;
                         }
                         else
@@ -288,6 +305,11 @@ namespace Game
         {
             this.Dead = true;
             
+            for (var i = 0; i < FlagList.Count; i++)
+            {
+                FlagList[i].Alive = false;
+            }
+            
             // 被剪掉的表现
             for (int i = 0; i < ChildBranches.Count; i++)
             {
@@ -301,6 +323,41 @@ namespace Game
                     ParentBranch.ChildBranches.RemoveAt(i);
                     break;
                 }
+            }
+        }
+
+        // 只检查自己 id 存活 时间
+        public bool CheckFlag(FlagCondition condition)
+        {
+            for (int i = 0; i < FlagList.Count; i++)
+            {
+                if (FlagList[i].Id == condition.Id)
+                {
+                    if (condition.HasTime > 0 && (Time.time - FlagList[i].AddTime) < condition.HasTime)
+                    {
+                        break;
+                    }
+                    
+                    if (condition.Alive != FlagList[i].Alive)
+                    {
+                        break;
+                    }
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+        
+        // 激活 人物的flag
+        public void ActiveCharacterFlag(CharacterConfig character, Branch branch)
+        {
+            for (var i = 0; i < character.ActiveFlag.Count; i++)
+            {
+                var flag = new Flag(character.ActiveFlag[i], Time.time);
+                branch.FlagList.Add(flag);
+                TheGame.Get().TreeMng.AddFlag(flag);
             }
         }
         
