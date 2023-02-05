@@ -3,22 +3,88 @@
     "id": "effect_101",
     "life_add": 0,
     "life_minus": 0,
-    "cost_add": 4,
+    "cost_add": 0,
     "cost_minus": 0,
-    "event_add": 0,
+    "event_add": 1,
     "event_minus": 0,
     "branch_add": 0,
     "branch_minus": 0
   },
   {
     "id": "effect_102",
+    "life_add": 40,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 2,
+    "event_add": 50,
+    "event_minus": 0,
+    "branch_add": 0,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_103",
     "life_add": 0,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 0,
+    "event_add": 0,
+    "event_minus": 20,
+    "branch_add": 20,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_104",
+    "life_add": 20,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 1,
+    "event_add": 0,
+    "event_minus": 0,
+    "branch_add": 10,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_105",
+    "life_add": 15,
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 0,
     "event_add": 20,
     "event_minus": 0,
+    "branch_add": 10,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_106",
+    "life_add": 50,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 0,
+    "event_add": 60,
+    "event_minus": 0,
     "branch_add": 0,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_107",
+    "life_add": 100,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 0,
+    "event_add": 100,
+    "event_minus": 0,
+    "branch_add": 0,
+    "branch_minus": 0
+  },
+  {
+    "id": "effect_109",
+    "life_add": 0,
+    "life_minus": 0,
+    "cost_add": 0,
+    "cost_minus": 0,
+    "event_add": 100,
+    "event_minus": 0,
+    "branch_add": 100,
     "branch_minus": 0
   }
 ]

@@ -56,5 +56,632 @@
     "max_tree_time": 50,
     "flag_conditions": [],
     "active_flag": []
+  },
+  {
+    "id": "char_1003",
+    "name": "妈妈名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "母亲",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1003"
+    ]
+  },
+  {
+    "id": "char_1004",
+    "name": "舅妈名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 20,
+    "relationship": "舅妈",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1004"
+    ]
+  },
+  {
+    "id": "char_1005",
+    "name": "父亲名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "父亲",
+    "desc": "好奇",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1005"
+    ]
+  },
+  {
+    "id": "char_1006",
+    "name": "甘",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 50,
+    "relationship": "同学",
+    "desc": "陌生",
+    "job": "",
+    "effect": "effect_101",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1006"
+    ]
+  },
+  {
+    "id": "char_1007",
+    "name": "布娃娃",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "甘的礼物",
+    "desc": "超喜欢",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1006",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1007"
+    ]
+  },
+  {
+    "id": "char_1008",
+    "name": "甘",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 100,
+    "relationship": "同学",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1007",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1008"
+    ]
+  },
+  {
+    "id": "char_1009",
+    "name": "小学老师名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 30,
+    "relationship": "老师",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "min_tree_time": 10,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1009"
+    ]
+  },
+  {
+    "id": "char_1010",
+    "name": "妈妈名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "母亲",
+    "desc": "思念",
+    "job": "",
+    "effect": "effect_102",
+    "min_tree_time": 10,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1003",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1010"
+    ]
+  },
+  {
+    "id": "char_1011",
+    "name": "父亲名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 50,
+    "relationship": "父亲",
+    "desc": "害怕",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": 10,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1011"
+    ]
+  },
+  {
+    "id": "char_1012",
+    "name": "舅妈名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "舅妈",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "effect_104",
+    "min_tree_time": 15,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1004",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1012"
+    ]
+  },
+  {
+    "id": "char_1013",
+    "name": "舅舅名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 50,
+    "relationship": "舅舅",
+    "desc": "熟悉",
+    "job": "收银员",
+    "effect": "effect_104",
+    "min_tree_time": 15,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1004",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 5,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1013"
+    ]
+  },
+  {
+    "id": "char_1014",
+    "name": "小京",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "甘的猫咪",
+    "desc": "超喜欢",
+    "job": "",
+    "effect": "effect_106",
+    "min_tree_time": -1,
+    "max_tree_time": 30,
+    "flag_conditions": [
+      {
+        "id": "flag_1008",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1014"
+    ]
+  },
+  {
+    "id": "char_1015",
+    "name": "二舅妈名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 1000,
+    "relationship": "二舅妈",
+    "desc": "陌生",
+    "job": "",
+    "effect": "effect_105",
+    "min_tree_time": 20,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1015"
+    ]
+  },
+  {
+    "id": "char_1016",
+    "name": "二舅妈名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 1000,
+    "relationship": "二舅妈",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "effect_105",
+    "min_tree_time": 20,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1015",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1016"
+    ]
+  },
+  {
+    "id": "char_1017",
+    "name": "父亲名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 100,
+    "relationship": "父亲",
+    "desc": "疏远",
+    "job": "",
+    "effect": "effect_103",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1011",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1017"
+    ]
+  },
+  {
+    "id": "char_1018",
+    "name": "二舅舅名",
+    "image": "char_icon_1002",
+    "priority": 2,
+    "weight": 1000,
+    "relationship": "二舅舅",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1015",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1018"
+    ]
+  },
+  {
+    "id": "char_1019",
+    "name": "？？",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "游乐园工作人员",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1019"
+    ]
+  },
+  {
+    "id": "char_1020",
+    "name": "？？",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "陌生人",
+    "desc": "害怕",
+    "job": "",
+    "effect": "effect_109",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1019",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1020"
+    ]
+  },
+  {
+    "id": "char_1021",
+    "name": "？？",
+    "image": "char_icon_1002",
+    "priority": 0,
+    "weight": 0,
+    "relationship": "陌生人",
+    "desc": "恐惧",
+    "job": "",
+    "effect": "effect_109",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1020",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1021"
+    ]
+  },
+  {
+    "id": "char_1022",
+    "name": "？？？",
+    "image": "char_icon_1002",
+    "priority": 0,
+    "weight": 0,
+    "relationship": "陌生人",
+    "desc": "恐惧",
+    "job": "",
+    "effect": "effect_109",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1021",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1022"
+    ]
+  },
+  {
+    "id": "char_1023",
+    "name": "米奇",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "吉祥大玩偶",
+    "desc": "陌生",
+    "job": "游乐园工作人员",
+    "effect": "effect_101",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1020",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      },
+      {
+        "id": "flag_1021",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "min_time": 0,
+        "max_time": 0
+      },
+      {
+        "id": "flag_1022",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1023"
+    ]
+  },
+  {
+    "id": "char_10232",
+    "name": "米奇",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "吉祥大玩偶",
+    "desc": "陌生",
+    "job": "游乐园工作人员",
+    "effect": "effect_101",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1019",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "min_time": 5,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1023"
+    ]
+  },
+  {
+    "id": "char_1024",
+    "name": "唐老鸭",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "园长",
+    "desc": "依赖",
+    "job": "游乐园工作人员",
+    "effect": "effect_101",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1023",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1024"
+    ]
+  },
+  {
+    "id": "char_1025",
+    "name": "？？",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "警察",
+    "desc": "依赖",
+    "job": "",
+    "effect": "effect_101",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1024",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1025"
+    ]
+  },
+  {
+    "id": "char_1026",
+    "name": "妈妈名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "母亲",
+    "desc": "思念",
+    "job": "",
+    "effect": "effect_107",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1025",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": [
+      "flag_1026"
+    ]
+  },
+  {
+    "id": "char_1027",
+    "name": "父亲名",
+    "image": "char_icon_1002",
+    "priority": 1,
+    "weight": 10000,
+    "relationship": "父亲",
+    "desc": "依赖",
+    "job": "",
+    "effect": "effect_107",
+    "min_tree_time": 30,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1025",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "min_time": 0,
+        "max_time": 0
+      }
+    ],
+    "active_flag": []
   }
 ]
