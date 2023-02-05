@@ -1,8 +1,8 @@
 ﻿G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbbaseconfig.json,A3C54D615510978991F053A9CA4BEAC1,264,1675565698178
-G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbcharacter.json,E07D8DD9BEFAD99697D32EDA0ACEED9,1119,1675566663947
+G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbcharacter.json,7D39B37AA73D4411B93E5B564EE63EAC,1223,1675569515688
 G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbeffect.json,75EBA390944EDD8BB1A47038854C3FA,422,1675565807585
 G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/BaseConfig.cs,A1D94719969760AEC13B983D05915BD,3914,1675528888716
-G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/CharacterConfig.cs,D1DBCE34F32C6161D2D4DD7822C8EBC9,4978,1675566663947
+G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/CharacterConfig.cs,E44AAFAE1D9B238C667E9352A2219D,5552,1675569498285
 G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/config/FlagCondition.cs,E2A0F15AF0416D1BCD22B2CD91C1D0,3023,1675565947374
 G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/EffectConfig.cs,C4D91FFF5BF3B111E534C641A9B26F5,4053,1675565807585
 G:/DevelopFile/UnityProject/LifeSocialTree/Assets/Scripts/TBConfig/item/EQuality.cs,4A8E63B9228FCC60FA9D339EDFE9AB4C,767,1675511866052
@@ -15,5 +15,5 @@ G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/__beans__.xlsx,BA98
 G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/__enums__.xlsx,3E96958722FD88DD254AF36633F21DE,10645,1675476645624
 G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/__tables__.xlsx,2B7030D0653516717FB857252CD8D,11101,1675565801625
 G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/base.xlsx,34A929566B845227FC8A7B3F8CDADF11,13858,1675530269273
-G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/character.xlsx,5F4E8F5BC29EB1EF515376B12F52C3B,14125,1675566654616
+G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/character.xlsx,5F3DE143F4796228FD7FF6DDD1F303,14223,1675569512197
 G:/DevelopFile/UnityProject/LifeSocialTree/LubanConfig/Datas/effect.xlsx,CB3C28872D10822D9EE7595EA0F9B3,13695,1675565742730

@@ -9,6 +9,8 @@
     "desc": "xxx",
     "job": "学生",
     "effect": "effect_101",
+    "min_tree_time": -1,
+    "max_tree_time": -1,
     "flag_conditions": [
       {
         "id": "flag_101",
@@ -50,6 +52,8 @@
     "desc": "xxx",
     "job": "学生",
     "effect": "effect_102",
+    "min_tree_time": 10,
+    "max_tree_time": 50,
     "flag_conditions": [],
     "active_flag": []
   }
