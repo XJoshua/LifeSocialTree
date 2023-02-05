@@ -18,7 +18,7 @@ public class UICharacter : MonoBehaviour
         var character = Service.Cfg.GetCfgCharacter(id);
         
         NameText.text = character.Name;
-        RelationShipText.text = $"{character.Relationship} · {character.Desc}";
+        RelationShipText.text = $"{character.Relationship}\n{character.Desc}";
 
         Sprite.sprite = Service.Cfg.GetCharacterIcon(character.Id);
     }

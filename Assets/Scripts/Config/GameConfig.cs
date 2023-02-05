@@ -12,8 +12,10 @@ public class GameConfig
 
     public static string DefaultBtnSound = "";
 
-    public static string DefaultBgm = "";
+    public static string DefaultBgm = "lofi";
 
+    public static string DefaultClipSound = "secateurs_2";
+    
     public static float BranchAspect = 0.2f;
     
     public static float BranchGrow = 0.25f;

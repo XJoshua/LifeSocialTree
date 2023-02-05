@@ -18,9 +18,12 @@ public class TreeManager
     
     public Dictionary<string, List<Flag>> FlagDict = new Dictionary<string, List<Flag>>();
     
+    public Dictionary<string, bool> CharacterDict = new Dictionary<string, bool>();
+    
     public void CreateNewTree()
     {
         FlagDict.Clear();
+        CharacterDict.Clear();
         TotalTime = 0;
         ParentBranch = Branch.CreateRootBranch();
         TheGame.Get().UITreeMng.CreateRootBranch(ParentBranch);
@@ -60,6 +63,18 @@ public class TreeManager
         return ParentBranch.Dead;
     }
 
+    public CharacterConfig AddCharacter(Branch branch)
+    {
+        var character = GetCharacterEvent(branch);
+
+        if (CharacterDict.ContainsKey(character.Id))
+        {
+            CharacterDict.Add(character.Id, true);
+        }
+
+        return character;
+    }
+    
     // 触发事件 相遇人物
     public CharacterConfig GetCharacterEvent(Branch branch)
     {
@@ -69,10 +84,11 @@ public class TreeManager
         
         for (var i = 0; i < allCharList.Count; i++)
         {
-            if (!CheckTreeLifeTime(allCharList[i].MinTreeTime, allCharList[i].MaxTreeTime))
-            {
+            if (CharacterDict.ContainsKey(allCharList[i].Id))
                 continue;
-            }
+            
+            if (!CheckTreeLifeTime(allCharList[i].MinTreeTime, allCharList[i].MaxTreeTime))
+                continue;
             
             bool can = true;
             for (var j = 0; j < allCharList[i].FlagConditions.Count; j++)

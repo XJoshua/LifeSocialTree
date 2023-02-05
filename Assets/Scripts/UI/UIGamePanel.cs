@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
@@ -29,6 +30,18 @@ namespace QFramework.Example
 		
 		protected override void OnClose()
 		{
+		}
+
+		protected void Update()
+		{
+			if (TheGame.Get() != null && TheGame.Get().TreeMng != null)
+			{
+				TxtLifeTime.text = $"Life Time: {(int)TheGame.Get().TreeMng.TotalTime}";
+			}
+			else
+			{
+				TxtLifeTime.text = "Life Time: 0";
+			}
 		}
 	}
 }

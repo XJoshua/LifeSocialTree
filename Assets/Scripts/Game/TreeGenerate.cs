@@ -10,8 +10,11 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using QFramework;
-using UnityEditor;
 using UnityEngine.Serialization;
+
+#if UNITY_EDITOR
+
+using UnityEditor;
 
 [CustomEditor(typeof(TreeGenerate))]
 public class TreeEditor : Editor
@@ -31,6 +34,8 @@ public class TreeEditor : Editor
         }
     }
 }
+
+#endif
 
 public class TreeGenerate : MonoBehaviour
 {

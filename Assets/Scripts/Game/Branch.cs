@@ -88,7 +88,7 @@ namespace Game
 
                 if (grow)
                 {
-                    // 分支 事件判断
+                    // 分支判断
                     var toBranch = UnityEngine.Random.Range(0, 1f) < BranchRate;
 
                     if (toBranch)
@@ -110,13 +110,14 @@ namespace Game
                         BranchRate += Service.Cfg.BaseConfig.BranchRateAdd;
                     }
 
+                    // 事件判断
                     if (!Sleep)
                     {
                         var toEvent = UnityEngine.Random.Range(0, 1f) < EventRate;
 
                         if (toEvent)
                         {
-                            var character = TheGame.Get().TreeMng.GetCharacterEvent(this);
+                            var character = TheGame.Get().TreeMng.AddCharacter(this);
                             
                             if (character != null)
                             {

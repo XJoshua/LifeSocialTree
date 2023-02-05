@@ -68,6 +68,8 @@ public class UIBranch : MonoBehaviour
         if (ParentBranch == null) return;
         
         Debug.Log("try clip branch " + branchData);
+
+        Service.Audio.PlaySound(GameConfig.DefaultClipSound);
         
         branchData.TryClip();
         

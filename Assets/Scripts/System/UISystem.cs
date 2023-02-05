@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Game;
 // using Game.UI;
 using QFramework;
+using QFramework.Example;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -79,7 +80,7 @@ namespace GameSystem
             //UIKit.OpenPanel<UIHomePanel>();
             TheGame.Get().NewGame();
 
-            //UIKit.OpenPanel<UIGuidePanel>();
+            UIKit.OpenPanel<UIGamePanel>();
         }
         
         public void OnGameStart()

@@ -10,6 +10,7 @@ namespace GameSystem
     {
         public override void RegisterEvents()
         {
+            PlayBgm(GameConfig.DefaultBgm);
         }
 
         public void PlaySound(string sound)

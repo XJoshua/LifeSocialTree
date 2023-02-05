@@ -38,16 +38,30 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: f11a4b00bf68a0648ac7d46576b605ec, type: 3}
+  - {fileID: 21300000, guid: 5a87133247b5cb647bd7324c83c3a597, type: 3}
   - {fileID: 21300000, guid: 3c716c62a0bd67949a3c86758bfe7d7f, type: 3}
+  - {fileID: 21300000, guid: dcee8e74c6a749249afe00269ddecce1, type: 3}
   - {fileID: 21300000, guid: b2bb76a41a3fcec4eb3dd2625b66aaa9, type: 3}
   - {fileID: 21300000, guid: 7cba665548f607643a236fdc5a6d4785, type: 3}
+  - {fileID: 21300000, guid: e66fabb84c1b89641b77b127c087983f, type: 3}
+  - {fileID: 21300000, guid: ee059ebb6aaf75944b3a2fd4d5a9149a, type: 3}
+  - {fileID: 21300000, guid: 30d68a1c781c865418117062e607c6ea, type: 3}
   - {fileID: 21300000, guid: 4b7ae9ac5db9cef4dad4a8bc65b27552, type: 3}
+  - {fileID: 21300000, guid: d75446fe43218a54d97b22fc980c5390, type: 3}
+  - {fileID: 21300000, guid: 381fa8ff13789a44cbc654b08b52711b, type: 3}
   m_PackedSpriteNamesToIndex:
   - char_icon_1002
+  - Asset 9256
   - char_icon_1003
+  - Asset 11256
   - char_icon_1005
   - char_icon_1001
+  - char_icon_1006
+  - Asset 8256
+  - char_icon_1007
   - char_icon_1004
+  - Asset 6256
+  - Asset 7256
   m_RenderDataMap: {}
   m_Tag: UIIconAtlas
   m_IsVariant: 0

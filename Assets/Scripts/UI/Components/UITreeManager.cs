@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using cfg;
 using QFramework;
-using UnityEditor;
 using UnityEngine.Serialization;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Game
 {
@@ -20,6 +23,7 @@ namespace Game
         public int maxDepth = 15; //what's the maximum "depth" of the recursive algorithm?
     }
 
+#if UNITY_EDITOR
     [CustomEditor(typeof(UITreeManager))]
     public class UITreeManagerEditor : Editor
     {
@@ -38,7 +42,8 @@ namespace Game
             }
         }
     }
-
+#endif
+    
     public class UITreeManager : MonoBehaviour
     {
         public Transform TrunkRoot;
