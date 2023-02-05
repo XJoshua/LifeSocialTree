@@ -30,7 +30,7 @@ public sealed partial class EffectConfig :  Bright.Config.BeanBase
         PostInit();
     }
 
-    public EffectConfig(string id, int life_add, int life_minus, int cost_add, int cost_minus, int event_add, int event_minus, int branch_add, int branch_minus ) 
+    public EffectConfig(string id, float life_add, float life_minus, float cost_add, float cost_minus, float event_add, float event_minus, float branch_add, float branch_minus ) 
     {
         this.Id = id;
         this.LifeAdd = life_add;
@@ -56,35 +56,35 @@ public sealed partial class EffectConfig :  Bright.Config.BeanBase
     /// <summary>
     /// 增加生命值
     /// </summary>
-    public int LifeAdd { get; private set; }
+    public float LifeAdd { get; private set; }
     /// <summary>
     /// 减少生命值
     /// </summary>
-    public int LifeMinus { get; private set; }
+    public float LifeMinus { get; private set; }
     /// <summary>
     /// 增加衰减值
     /// </summary>
-    public int CostAdd { get; private set; }
+    public float CostAdd { get; private set; }
     /// <summary>
     /// 减少衰减值
     /// </summary>
-    public int CostMinus { get; private set; }
+    public float CostMinus { get; private set; }
     /// <summary>
     /// 增加相遇可能性
     /// </summary>
-    public int EventAdd { get; private set; }
+    public float EventAdd { get; private set; }
     /// <summary>
     /// 减少相遇可能性
     /// </summary>
-    public int EventMinus { get; private set; }
+    public float EventMinus { get; private set; }
     /// <summary>
     /// 增加分支可能性
     /// </summary>
-    public int BranchAdd { get; private set; }
+    public float BranchAdd { get; private set; }
     /// <summary>
     /// 减少分支可能性
     /// </summary>
-    public int BranchMinus { get; private set; }
+    public float BranchMinus { get; private set; }
 
     public const int __ID__ = -682668973;
     public override int GetTypeId() => __ID__;

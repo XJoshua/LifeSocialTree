@@ -16,7 +16,7 @@
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 2,
-    "event_add": 50,
+    "event_add": 0.5,
     "event_minus": 0,
     "branch_add": 0,
     "branch_minus": 0
@@ -28,8 +28,8 @@
     "cost_add": 0,
     "cost_minus": 0,
     "event_add": 0,
-    "event_minus": 20,
-    "branch_add": 20,
+    "event_minus": 0.2,
+    "branch_add": 0.5,
     "branch_minus": 0
   },
   {
@@ -40,7 +40,7 @@
     "cost_minus": 1,
     "event_add": 0,
     "event_minus": 0,
-    "branch_add": 10,
+    "branch_add": 0.1,
     "branch_minus": 0
   },
   {
@@ -49,9 +49,9 @@
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 0,
-    "event_add": 20,
+    "event_add": 0.2,
     "event_minus": 0,
-    "branch_add": 10,
+    "branch_add": 0.1,
     "branch_minus": 0
   },
   {
@@ -60,7 +60,7 @@
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 0,
-    "event_add": 60,
+    "event_add": 0.6,
     "event_minus": 0,
     "branch_add": 0,
     "branch_minus": 0
@@ -71,7 +71,7 @@
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 0,
-    "event_add": 100,
+    "event_add": 1,
     "event_minus": 0,
     "branch_add": 0,
     "branch_minus": 0
@@ -82,9 +82,9 @@
     "life_minus": 0,
     "cost_add": 0,
     "cost_minus": 0,
-    "event_add": 100,
+    "event_add": 1,
     "event_minus": 0,
-    "branch_add": 100,
+    "branch_add": 1,
     "branch_minus": 0
   }
 ]

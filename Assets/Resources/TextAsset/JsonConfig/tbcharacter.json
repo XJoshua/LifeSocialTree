@@ -13,33 +13,30 @@
     "max_tree_time": -1,
     "flag_conditions": [
       {
-        "id": "flag_101",
+        "id": "flag_1001",
         "has": false,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       },
       {
-        "id": "flag_102",
+        "id": "flag_1002",
         "has": true,
         "in_parent": true,
         "alive": true,
-        "min_time": 5,
-        "max_time": 20
+        "has_time": 5
       },
       {
-        "id": "flag_103",
+        "id": "flag_1003",
         "has": true,
         "in_parent": false,
         "alive": false,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
-      "flag_101",
-      "flag_102"
+      "flag_1001",
+      "flag_1002"
     ]
   },
   {
@@ -60,7 +57,7 @@
   {
     "id": "char_1003",
     "name": "妈妈名",
-    "image": "char_icon_1002",
+    "image": "char_icon_1003",
     "priority": 2,
     "weight": 100,
     "relationship": "母亲",
@@ -77,7 +74,7 @@
   {
     "id": "char_1004",
     "name": "舅妈名",
-    "image": "char_icon_1002",
+    "image": "char_icon_1004",
     "priority": 2,
     "weight": 20,
     "relationship": "舅妈",
@@ -143,8 +140,7 @@
         "has": true,
         "in_parent": true,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -169,8 +165,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -212,8 +207,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -238,8 +232,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -264,8 +257,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -290,8 +282,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 5,
-        "max_time": 0
+        "has_time": 5
       }
     ],
     "active_flag": [
@@ -316,8 +307,7 @@
         "has": true,
         "in_parent": true,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -359,8 +349,7 @@
         "has": true,
         "in_parent": true,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -385,8 +374,7 @@
         "has": true,
         "in_parent": false,
         "alive": false,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -411,8 +399,7 @@
         "has": true,
         "in_parent": true,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -454,8 +441,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -480,8 +466,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -506,8 +491,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -532,24 +516,21 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       },
       {
         "id": "flag_1021",
         "has": true,
         "in_parent": false,
         "alive": false,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       },
       {
         "id": "flag_1022",
         "has": true,
         "in_parent": false,
         "alive": false,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -574,8 +555,7 @@
         "has": true,
         "in_parent": false,
         "alive": false,
-        "min_time": 5,
-        "max_time": 0
+        "has_time": 5
       }
     ],
     "active_flag": [
@@ -600,8 +580,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -626,8 +605,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -652,8 +630,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -678,8 +655,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "min_time": 0,
-        "max_time": 0
+        "has_time": -1
       }
     ],
     "active_flag": []

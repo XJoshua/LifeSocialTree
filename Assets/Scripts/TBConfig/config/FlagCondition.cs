@@ -25,19 +25,17 @@ public sealed partial class FlagCondition :  Bright.Config.BeanBase
         { if(!_json["has"].IsBoolean) { throw new SerializationException(); }  Has = _json["has"]; }
         { if(!_json["in_parent"].IsBoolean) { throw new SerializationException(); }  InParent = _json["in_parent"]; }
         { if(!_json["alive"].IsBoolean) { throw new SerializationException(); }  Alive = _json["alive"]; }
-        { if(!_json["min_time"].IsNumber) { throw new SerializationException(); }  MinTime = _json["min_time"]; }
-        { if(!_json["max_time"].IsNumber) { throw new SerializationException(); }  MaxTime = _json["max_time"]; }
+        { if(!_json["has_time"].IsNumber) { throw new SerializationException(); }  HasTime = _json["has_time"]; }
         PostInit();
     }
 
-    public FlagCondition(string id, bool has, bool in_parent, bool alive, float min_time, float max_time ) 
+    public FlagCondition(string id, bool has, bool in_parent, bool alive, float has_time ) 
     {
         this.Id = id;
         this.Has = has;
         this.InParent = in_parent;
         this.Alive = alive;
-        this.MinTime = min_time;
-        this.MaxTime = max_time;
+        this.HasTime = has_time;
         PostInit();
     }
 
@@ -63,13 +61,9 @@ public sealed partial class FlagCondition :  Bright.Config.BeanBase
     /// </summary>
     public bool Alive { get; private set; }
     /// <summary>
-    /// 最小出现时间
+    /// 存活长度
     /// </summary>
-    public float MinTime { get; private set; }
-    /// <summary>
-    /// 最大出现时间
-    /// </summary>
-    public float MaxTime { get; private set; }
+    public float HasTime { get; private set; }
 
     public const int __ID__ = 199178563;
     public override int GetTypeId() => __ID__;
@@ -90,8 +84,7 @@ public sealed partial class FlagCondition :  Bright.Config.BeanBase
         + "Has:" + Has + ","
         + "InParent:" + InParent + ","
         + "Alive:" + Alive + ","
-        + "MinTime:" + MinTime + ","
-        + "MaxTime:" + MaxTime + ","
+        + "HasTime:" + HasTime + ","
         + "}";
     }
     
