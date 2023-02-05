@@ -77,10 +77,17 @@ public class UIBranch : MonoBehaviour
 
     public void Clip()
     {
-        // 被剪掉的表现
+        var list = new List<UIBranch>();
+        
         for (int i = 0; i < ChildBranches.Count; i++)
         {
-            ChildBranches[i].Clip();
+            list.Add(ChildBranches[i]);
+        }
+        
+        // 被剪掉的表现
+        for (int i = 0; i < list.Count; i++)
+        {
+            list[i].Clip();
         }
 
         for (int i = 0; i < ParentBranch.ChildBranches.Count; i++)
@@ -91,6 +98,13 @@ public class UIBranch : MonoBehaviour
                 break;
             }
         }
+        
+        for (var i = 0; i < Characters.Count; i++)
+        {
+            Destroy(Characters[i].gameObject);
+        }
+        
+        Characters.Clear();
         
         Destroy(this.gameObject);
     }
