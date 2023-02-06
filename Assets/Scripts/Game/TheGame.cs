@@ -31,7 +31,7 @@ public class TheGame : MonoSingleton<TheGame>
 
     private float ZoomSpeed = 5;
     private float MaxScale = 20;
-    private float MinScale = 3;
+    private float MinScale = 1;
     private float NowSize;
 
 

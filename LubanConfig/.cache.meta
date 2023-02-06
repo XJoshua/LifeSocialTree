@@ -1,6 +1,6 @@
-﻿F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbbaseconfig.json,2C84E73A1925B4279B8CF126DF1DCF2,287,1675693284307
-F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbcharacter.json,E3C46DAE96B3AB4417B521BFEEE43A54,22230,1675694666322
-F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbeffect.json,36468E9253484B83B7C99DA9ED5AD5C,1224,1675685715817
+﻿F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbbaseconfig.json,10B2FF5EB61E69B2F345065921BA599,290,1675702084236
+F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbcharacter.json,216E47B6AF3495B36C513BC1479E227,26097,1675702293628
+F:/yIshunGit/LifeSocialTree/Assets/Resources/TextAsset/JsonConfig/tbeffect.json,36468E9253484B83B7C99DA9ED5AD5C,1224,1675697798481
 F:/yIshunGit/LifeSocialTree/Assets/Scripts/TBConfig/BaseConfig.cs,79111ED3FDE6DA511F20688E1625DDA2,4261,1675597038499
 F:/yIshunGit/LifeSocialTree/Assets/Scripts/TBConfig/CharacterConfig.cs,8A209EC19E32214DF43AB41CBC2417,5875,1675604411530
 F:/yIshunGit/LifeSocialTree/Assets/Scripts/TBConfig/config/FlagCondition.cs,7B1EE7B9EB9BAFA9D15D8E2C67DBCAB2,2706,1675597038499
@@ -14,6 +14,6 @@ F:/yIshunGit/LifeSocialTree/Assets/Scripts/TBConfig/test/AccessFlag.cs,1CA5706C6
 F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/__beans__.xlsx,3B9A8C8E243DD63FAE6DE43722BDC3,11712,1675580387376
 F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/__enums__.xlsx,3E96958722FD88DD254AF36633F21DE,10645,1675579937622
 F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/__tables__.xlsx,2B7030D0653516717FB857252CD8D,11101,1675579937622
-F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/base.xlsx,18FFD22C24FFBDF5D12B2AF8C1DD42DE,13916,1675693281690
-F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/character.xlsx,A31255646542C53AF1B65FBE57884696,18173,1675694662531
-F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/effect.xlsx,D519B35421B542A7278622E2148E6FBA,13912,1675685705946
+F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/base.xlsx,8EF99853C42D848694D3F9ACA4AD40,13922,1675702082470
+F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/character.xlsx,5930BC6BBC99BE04587664DD9CF58E4,19254,1675702290733
+F:/yIshunGit/LifeSocialTree/LubanConfig/Datas/effect.xlsx,D519B35421B542A7278622E2148E6FBA,13912,1675697798484

@@ -21,20 +21,20 @@
   },
   {
     "id": "char_1009",
-    "name": "金",
+    "name": "园长",
     "image": "char_icon_1002",
-    "priority": 8,
+    "priority": 10,
     "weight": 1,
-    "relationship": "老师",
-    "desc": "陌生",
+    "relationship": "妈妈的朋友",
+    "desc": "关注",
     "job": "",
     "effect": "",
     "frame_size": 0.6,
     "min_tree_time": -1,
-    "max_tree_time": 30,
+    "max_tree_time": 40,
     "flag_conditions": [
       {
-        "id": "flag10031",
+        "id": "flag_1003",
         "has": true,
         "in_parent": true,
         "alive": true,
@@ -44,7 +44,7 @@
         "id": "flag_1005",
         "has": true,
         "in_parent": false,
-        "alive": true,
+        "alive": false,
         "has_time": -1
       }
     ],
@@ -119,7 +119,14 @@
         "has_time": -1
       },
       {
-        "id": "flag10030",
+        "id": "flag_1003",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1005",
         "has": true,
         "in_parent": false,
         "alive": true,
@@ -131,7 +138,7 @@
     ]
   },
   {
-    "id": "char_1041",
+    "id": "char_1031",
     "name": "甘",
     "image": "char_icon_1003",
     "priority": 1,
@@ -141,34 +148,34 @@
     "job": "",
     "effect": "",
     "frame_size": 0.7,
-    "min_tree_time": 100,
+    "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
       {
         "id": "flag_1007",
         "has": true,
-        "in_parent": true,
+        "in_parent": false,
         "alive": true,
-        "has_time": 10
+        "has_time": 5
       }
     ],
     "active_flag": [
-      "flag_1041",
-      "flag_10410"
+      "flag_1031",
+      "flag_10310"
     ]
   },
   {
-    "id": "char_1042",
+    "id": "char_1032",
     "name": "甘",
     "image": "char_icon_1003",
     "priority": 1,
     "weight": 1,
-    "relationship": "无话不谈",
-    "desc": "依赖",
+    "relationship": "同学",
+    "desc": "熟悉",
     "job": "",
     "effect": "",
     "frame_size": 0.7,
-    "min_tree_time": 100,
+    "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -179,7 +186,7 @@
         "has_time": 20
       },
       {
-        "id": "flag10030",
+        "id": "flag_1031",
         "has": false,
         "in_parent": false,
         "alive": true,
@@ -187,8 +194,8 @@
       }
     ],
     "active_flag": [
-      "flag_1042",
-      "flag_10410"
+      "flag_1032",
+      "flag_10310"
     ]
   },
   {
@@ -198,7 +205,7 @@
     "priority": 8,
     "weight": 200,
     "relationship": "爸爸，为什么你要离开我们？",
-    "desc": "疏远",
+    "desc": "思念",
     "job": "",
     "effect": "",
     "frame_size": 0.7,
@@ -208,8 +215,8 @@
       {
         "id": "flag_1005",
         "has": true,
-        "in_parent": true,
-        "alive": true,
+        "in_parent": false,
+        "alive": false,
         "has_time": -1
       },
       {
@@ -217,7 +224,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "has_time": 2
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -230,8 +237,8 @@
     "image": "char_icon_1001",
     "priority": 10,
     "weight": 10,
-    "relationship": "陌生人",
-    "desc": "伤感",
+    "relationship": "以前的爸爸",
+    "desc": "疏远",
     "job": "",
     "effect": "",
     "frame_size": 0.7,
@@ -243,11 +250,189 @@
         "has": true,
         "in_parent": false,
         "alive": false,
-        "has_time": 35
+        "has_time": 25
       }
     ],
     "active_flag": [
-      "char_1040"
+      "flag_1040"
+    ]
+  },
+  {
+    "id": "char_1041",
+    "name": "莎娜",
+    "image": "char_icon_1005",
+    "priority": 10,
+    "weight": 1,
+    "relationship": "妈妈……可以再呆一会吗？",
+    "desc": "思念",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": 10,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1003",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1041",
+      "flag_10410"
+    ]
+  },
+  {
+    "id": "char_1042",
+    "name": "戴拉",
+    "image": "char_icon_1004",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "舅妈",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1003",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1008",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1042",
+      "flag_10420",
+      "flag_10410"
+    ]
+  },
+  {
+    "id": "char_1043",
+    "name": "雷尔",
+    "image": "char_icon_1013",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "舅舅",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1003",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1008",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1043",
+      "flag_10420",
+      "flag_10410"
+    ]
+  },
+  {
+    "id": "char_1044",
+    "name": "维蒙",
+    "image": "char_icon_1036",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "爷爷",
+    "desc": "你要像个大人一样坚强。",
+    "job": "和爷爷约定了。",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_10410",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 2
+      }
+    ],
+    "active_flag": [
+      "flag_1044"
+    ]
+  },
+  {
+    "id": "char_1051",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 10,
+    "weight": 1,
+    "relationship": "爸爸，你回来了",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "frame_size": 1,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1009",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": 4
+      },
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1005",
+      "flag10030"
     ]
   },
   {
@@ -876,7 +1061,7 @@
     ]
   },
   {
-    "id": "char_1031",
+    "id": "char_10312",
     "name": "莎娜",
     "image": "char_icon_1005",
     "priority": 1,
@@ -902,7 +1087,7 @@
     ]
   },
   {
-    "id": "char_1032",
+    "id": "char_10322",
     "name": "罗恩",
     "image": "char_icon_1032",
     "priority": 1,
