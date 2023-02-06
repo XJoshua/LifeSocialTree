@@ -134,7 +134,7 @@ public class UIBranch : MonoBehaviour
 #endif  
             
             transform.localScale = GameConfig.GetBranchScale(branchData.Timer, transform.localScale);
-            TheGame.Get().CheckMoveCamera(EndPosTrans.position);
+            //TheGame.Get().CheckMoveCamera(EndPosTrans.position);
         }
         
         // 创建人物头像

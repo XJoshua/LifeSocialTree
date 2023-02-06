@@ -1,20 +1,253 @@
 [
   {
     "id": "char_1003",
-    "name": "妈妈",
+    "name": "莎娜",
     "image": "char_icon_1005",
-    "priority": 2,
-    "weight": 200,
-    "relationship": "",
+    "priority": 10,
+    "weight": 1,
+    "relationship": "妈妈",
     "desc": "依赖",
     "job": "",
-    "effect": "effect_102",
-    "frame_size": 1.2,
+    "effect": "effect_901",
+    "frame_size": 1,
     "min_tree_time": -1,
     "max_tree_time": -1,
     "flag_conditions": [],
     "active_flag": [
-      "flag_1003"
+      "flag_1003",
+      "flag10030",
+      "flag10031"
+    ]
+  },
+  {
+    "id": "char_1009",
+    "name": "金",
+    "image": "char_icon_1002",
+    "priority": 8,
+    "weight": 1,
+    "relationship": "老师",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.6,
+    "min_tree_time": -1,
+    "max_tree_time": 30,
+    "flag_conditions": [
+      {
+        "id": "flag10031",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1009"
+    ]
+  },
+  {
+    "id": "char_1005",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 10,
+    "weight": 1,
+    "relationship": "爸爸",
+    "desc": "好奇",
+    "job": "",
+    "effect": "effect_901",
+    "frame_size": 1,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [],
+    "active_flag": [
+      "flag_1005",
+      "flag10030"
+    ]
+  },
+  {
+    "id": "char_1006",
+    "name": "甘",
+    "image": "char_icon_1003",
+    "priority": 8,
+    "weight": 1,
+    "relationship": "园友",
+    "desc": "陌生",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag10030",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1006"
+    ]
+  },
+  {
+    "id": "char_1007",
+    "name": "布娃娃",
+    "image": "char_icon_1007",
+    "priority": 1,
+    "weight": 1,
+    "relationship": "甘的礼物",
+    "desc": "超喜欢",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.6,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1006",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag10030",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1007"
+    ]
+  },
+  {
+    "id": "char_1041",
+    "name": "甘",
+    "image": "char_icon_1003",
+    "priority": 1,
+    "weight": 1,
+    "relationship": "无话不谈",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": 100,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1007",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": 10
+      }
+    ],
+    "active_flag": [
+      "flag_1041",
+      "flag_10410"
+    ]
+  },
+  {
+    "id": "char_1042",
+    "name": "甘",
+    "image": "char_icon_1003",
+    "priority": 1,
+    "weight": 1,
+    "relationship": "无话不谈",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": 100,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1006",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 20
+      },
+      {
+        "id": "flag10030",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1042",
+      "flag_10410"
+    ]
+  },
+  {
+    "id": "char_1008",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 8,
+    "weight": 200,
+    "relationship": "爸爸，为什么你要离开我们？",
+    "desc": "疏远",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1005",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1009",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 2
+      }
+    ],
+    "active_flag": [
+      "flag_1008"
+    ]
+  },
+  {
+    "id": "char_1040",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 10,
+    "weight": 10,
+    "relationship": "陌生人",
+    "desc": "伤感",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1008",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": 35
+      }
+    ],
+    "active_flag": [
+      "char_1040"
     ]
   },
   {
@@ -28,7 +261,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [],
     "active_flag": [
@@ -36,69 +269,7 @@
     ]
   },
   {
-    "id": "char_1005",
-    "name": "爸爸",
-    "image": "char_icon_1001",
-    "priority": 2,
-    "weight": 200,
-    "relationship": "",
-    "desc": "好奇",
-    "job": "",
-    "effect": "",
-    "frame_size": 1.2,
-    "min_tree_time": -1,
-    "max_tree_time": -1,
-    "flag_conditions": [],
-    "active_flag": [
-      "flag_1005"
-    ]
-  },
-  {
-    "id": "char_1006",
-    "name": "甘",
-    "image": "char_icon_1003",
-    "priority": 1,
-    "weight": 200,
-    "relationship": "幼儿园同学",
-    "desc": "陌生",
-    "job": "",
-    "effect": "effect_101",
-    "frame_size": 1,
-    "min_tree_time": -1,
-    "max_tree_time": -1,
-    "flag_conditions": [],
-    "active_flag": [
-      "flag_1006"
-    ]
-  },
-  {
-    "id": "char_1007",
-    "name": "布娃娃",
-    "image": "char_icon_1007",
-    "priority": 1,
-    "weight": 10000,
-    "relationship": "甘的礼物",
-    "desc": "超喜欢",
-    "job": "",
-    "effect": "",
-    "frame_size": 0.7,
-    "min_tree_time": -1,
-    "max_tree_time": -1,
-    "flag_conditions": [
-      {
-        "id": "flag_1006",
-        "has": true,
-        "in_parent": true,
-        "alive": true,
-        "has_time": -1
-      }
-    ],
-    "active_flag": [
-      "flag_1007"
-    ]
-  },
-  {
-    "id": "char_1008",
+    "id": "char_1088",
     "name": "甘",
     "image": "char_icon_1003",
     "priority": 1,
@@ -108,7 +279,7 @@
     "job": "",
     "effect": "effect_1010",
     "frame_size": 1,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -124,24 +295,6 @@
     ]
   },
   {
-    "id": "char_1009",
-    "name": "金",
-    "image": "char_icon_1002",
-    "priority": 1,
-    "weight": 50,
-    "relationship": "老师",
-    "desc": "陌生",
-    "job": "",
-    "effect": "",
-    "frame_size": 0.8,
-    "min_tree_time": -1,
-    "max_tree_time": -1,
-    "flag_conditions": [],
-    "active_flag": [
-      "flag_1009"
-    ]
-  },
-  {
     "id": "char_1010",
     "name": "莎娜",
     "image": "char_icon_1005",
@@ -152,7 +305,7 @@
     "job": "",
     "effect": "",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -179,7 +332,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -206,7 +359,7 @@
     "job": "",
     "effect": "effect_104",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -233,7 +386,7 @@
     "job": "收银员",
     "effect": "effect_104",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -260,7 +413,7 @@
     "job": "",
     "effect": "effect_106",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -286,7 +439,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.7,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -312,7 +465,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.7,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -338,7 +491,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -364,7 +517,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -390,7 +543,7 @@
     "job": "",
     "effect": "effect_109",
     "frame_size": 1,
-    "min_tree_time": 8,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -416,7 +569,7 @@
     "job": "",
     "effect": "",
     "frame_size": 1,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -442,7 +595,7 @@
     "job": "",
     "effect": "",
     "frame_size": 1,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -468,7 +621,7 @@
     "job": "",
     "effect": "",
     "frame_size": 1,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -494,7 +647,7 @@
     "job": "游乐园工作人员",
     "effect": "effect_101",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -520,7 +673,7 @@
     "job": "游乐园工作人员",
     "effect": "effect_101",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -546,7 +699,7 @@
     "job": "游乐园工作人员",
     "effect": "effect_101",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -572,7 +725,7 @@
     "job": "",
     "effect": "effect_101",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -598,7 +751,7 @@
     "job": "",
     "effect": "effect_107",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -624,7 +777,7 @@
     "job": "",
     "effect": "effect_107",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -648,7 +801,7 @@
     "job": "",
     "effect": "effect_102",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -681,7 +834,7 @@
     "job": "",
     "effect": "effect_102",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -707,7 +860,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 1.2,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -733,7 +886,7 @@
     "job": "",
     "effect": "effect_105",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -759,7 +912,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -785,7 +938,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -811,7 +964,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -837,7 +990,7 @@
     "job": "",
     "effect": "",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -863,7 +1016,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -889,7 +1042,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {
@@ -915,7 +1068,7 @@
     "job": "",
     "effect": "effect_103",
     "frame_size": 0.8,
-    "min_tree_time": -1,
+    "min_tree_time": 100,
     "max_tree_time": -1,
     "flag_conditions": [
       {

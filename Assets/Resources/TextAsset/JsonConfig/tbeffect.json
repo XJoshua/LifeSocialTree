@@ -61,5 +61,12 @@
     "cost_add": 0.2,
     "event_add": 0.3,
     "branch_add": 0.4
+  },
+  {
+    "id": "effect_901",
+    "life_add": 0,
+    "cost_add": 0,
+    "event_add": 0,
+    "branch_add": 0.9
   }
 ]
