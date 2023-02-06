@@ -16,6 +16,14 @@ namespace QAssetBundle
         public const string BundleName = "a_png";
         public const string A = "a";
     }
+    public class Audio
+    {
+        public const string BundleName = "audio";
+        public const string AXE_1 = "axe_1";
+        public const string LOFI = "lofi";
+        public const string SECATEURS_1 = "secateurs_1";
+        public const string SECATEURS_2 = "secateurs_2";
+    }
     public class B_png
     {
         public const string BundleName = "b_png";
