@@ -23,15 +23,15 @@
     "id": "char_1009",
     "name": "园长",
     "image": "char_icon_1002",
-    "priority": 10,
-    "weight": 1,
-    "relationship": "妈妈的朋友",
+    "priority": 30,
+    "weight": 100,
+    "relationship": "妈妈很在意的人",
     "desc": "关注",
     "job": "",
-    "effect": "",
+    "effect": "effect_901",
     "frame_size": 0.6,
     "min_tree_time": -1,
-    "max_tree_time": 40,
+    "max_tree_time": -1,
     "flag_conditions": [
       {
         "id": "flag_1003",
@@ -45,6 +45,13 @@
         "has": true,
         "in_parent": false,
         "alive": false,
+        "has_time": -1
+      },
+      {
+        "id": "flag_10600",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
         "has_time": -1
       }
     ],
@@ -75,7 +82,7 @@
     "id": "char_1006",
     "name": "甘",
     "image": "char_icon_1003",
-    "priority": 8,
+    "priority": 20,
     "weight": 1,
     "relationship": "园友",
     "desc": "陌生",
@@ -88,6 +95,13 @@
       {
         "id": "flag10030",
         "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_10600",
+        "has": false,
         "in_parent": false,
         "alive": true,
         "has_time": -1
@@ -183,10 +197,24 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "has_time": 20
+        "has_time": 30
       },
       {
         "id": "flag_1031",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1083",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_10600",
         "has": false,
         "in_parent": false,
         "alive": true,
@@ -202,7 +230,7 @@
     "id": "char_1008",
     "name": "普鲁特",
     "image": "char_icon_1001",
-    "priority": 8,
+    "priority": 20,
     "weight": 200,
     "relationship": "爸爸，为什么你要离开我们？",
     "desc": "思念",
@@ -224,7 +252,7 @@
         "has": true,
         "in_parent": false,
         "alive": true,
-        "has_time": -1
+        "has_time": 2
       }
     ],
     "active_flag": [
@@ -237,7 +265,7 @@
     "image": "char_icon_1001",
     "priority": 10,
     "weight": 10,
-    "relationship": "以前的爸爸",
+    "relationship": "熟悉的陌生人",
     "desc": "疏远",
     "job": "",
     "effect": "",
@@ -251,6 +279,13 @@
         "in_parent": false,
         "alive": false,
         "has_time": 25
+      },
+      {
+        "id": "flag_1072",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
       }
     ],
     "active_flag": [
@@ -318,13 +353,6 @@
         "in_parent": false,
         "alive": false,
         "has_time": -1
-      },
-      {
-        "id": "flag_1008",
-        "has": true,
-        "in_parent": false,
-        "alive": true,
-        "has_time": -1
       }
     ],
     "active_flag": [
@@ -360,13 +388,6 @@
         "in_parent": false,
         "alive": false,
         "has_time": -1
-      },
-      {
-        "id": "flag_1008",
-        "has": true,
-        "in_parent": false,
-        "alive": true,
-        "has_time": -1
       }
     ],
     "active_flag": [
@@ -379,7 +400,7 @@
     "id": "char_1044",
     "name": "维蒙",
     "image": "char_icon_1036",
-    "priority": 11,
+    "priority": 25,
     "weight": 1,
     "relationship": "爷爷",
     "desc": "你要像个大人一样坚强。",
@@ -420,19 +441,515 @@
         "has": true,
         "in_parent": false,
         "alive": false,
-        "has_time": 4
+        "has_time": -1
       },
       {
-        "id": "flag_1005",
+        "id": "flag_1008",
         "has": true,
         "in_parent": false,
-        "alive": false,
+        "alive": true,
         "has_time": -1
       }
     ],
     "active_flag": [
       "flag_1005",
-      "flag10030"
+      "flag10030",
+      "flag_1051"
+    ]
+  },
+  {
+    "id": "char_1060",
+    "name": "？？",
+    "image": "char_icon_9001",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "你是谁？",
+    "desc": "恐惧",
+    "job": "为什么跟着我……",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1044",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 2
+      },
+      {
+        "id": "flag_10600",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1060",
+      "flag_10600"
+    ]
+  },
+  {
+    "id": "char_1061",
+    "name": "？？？",
+    "image": "char_icon_9001",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "你是谁？",
+    "desc": "恐惧",
+    "job": "为什么跟着我……",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1044",
+        "has": true,
+        "in_parent": false,
+        "alive": false,
+        "has_time": 2
+      },
+      {
+        "id": "flag_10600",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1061",
+      "flag_10600"
+    ]
+  },
+  {
+    "id": "char_1062",
+    "name": "？？？",
+    "image": "char_icon_9002",
+    "priority": 20,
+    "weight": 1,
+    "relationship": "放开我！！",
+    "desc": "恐惧",
+    "job": "爸爸，妈妈，你们在哪？",
+    "effect": "effect_901",
+    "frame_size": 0.6,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_10600",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1062"
+    ]
+  },
+  {
+    "id": "char_1063",
+    "name": "？？？",
+    "image": "char_icon_9002",
+    "priority": 20,
+    "weight": 1,
+    "relationship": "救救我……",
+    "desc": "奔溃",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.6,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1062",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": 2
+      },
+      {
+        "id": "flag_1064",
+        "has": false,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1063"
+    ]
+  },
+  {
+    "id": "char_1064",
+    "name": "戴拉",
+    "image": "char_icon_1004",
+    "priority": 20,
+    "weight": 1,
+    "relationship": "舅妈！！",
+    "desc": "",
+    "job": "太好了……得救了。",
+    "effect": "effect_902",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1063",
+        "has": true,
+        "in_parent": true,
+        "alive": false,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1064"
+    ]
+  },
+  {
+    "id": "char_1065",
+    "name": "雷尔",
+    "image": "char_icon_1013",
+    "priority": 11,
+    "weight": 1,
+    "relationship": "舅舅",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1064",
+        "has": true,
+        "in_parent": true,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1065"
+    ]
+  },
+  {
+    "id": "char_1066",
+    "name": "罗恩",
+    "image": "char_icon_1032",
+    "priority": 5,
+    "weight": 1,
+    "relationship": "同学",
+    "desc": "好奇",
+    "job": "",
+    "effect": "effect_903",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1064",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 2
+      }
+    ],
+    "active_flag": [
+      "flag_1066"
+    ]
+  },
+  {
+    "id": "char_1067",
+    "name": "托尼",
+    "image": "char_icon_1033",
+    "priority": 5,
+    "weight": 1,
+    "relationship": "校霸",
+    "desc": "讨厌",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1066",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 1
+      }
+    ],
+    "active_flag": [
+      "flag_1067"
+    ]
+  },
+  {
+    "id": "char_1068",
+    "name": "维蒙",
+    "image": "char_icon_1034",
+    "priority": 5,
+    "weight": 1,
+    "relationship": "学生",
+    "desc": "讨厌",
+    "job": "",
+    "effect": "effect_904",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1066",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 2
+      }
+    ],
+    "active_flag": [
+      "flag_1068"
+    ]
+  },
+  {
+    "id": "char_1069",
+    "name": "威奥",
+    "image": "char_icon_1035",
+    "priority": 5,
+    "weight": 1,
+    "relationship": "混混",
+    "desc": "好奇",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1066",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 3
+      }
+    ],
+    "active_flag": [
+      "flag_1069"
+    ]
+  },
+  {
+    "id": "char_1070",
+    "name": "卡尔",
+    "image": "char_icon_1036",
+    "priority": 5,
+    "weight": 1,
+    "relationship": "混混",
+    "desc": "熟悉",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1066",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": 3
+      }
+    ],
+    "active_flag": [
+      "flag_1070"
+    ]
+  },
+  {
+    "id": "char_1071",
+    "name": "警察",
+    "image": "char_icon_1025",
+    "priority": 13,
+    "weight": 1,
+    "relationship": "谢谢",
+    "desc": "熟悉",
+    "job": "太好了……得救了。",
+    "effect": "",
+    "frame_size": 0.7,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1063",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1041",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1071"
+    ]
+  },
+  {
+    "id": "char_1072",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 14,
+    "weight": 1,
+    "relationship": "爸爸！",
+    "desc": "开心",
+    "job": "我好想你……",
+    "effect": "effect_902",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1071",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1072"
+    ]
+  },
+  {
+    "id": "char_1073",
+    "name": "莎娜",
+    "image": "char_icon_1005",
+    "priority": 14,
+    "weight": 1,
+    "relationship": "妈妈",
+    "desc": "依赖",
+    "job": "",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1071",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_1072",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1073",
+      "flag_10730"
+    ]
+  },
+  {
+    "id": "char_1081",
+    "name": "戴拉",
+    "image": "char_icon_1004",
+    "priority": 13,
+    "weight": 1,
+    "relationship": "舅妈！！",
+    "desc": "",
+    "job": "太好了……得救了。",
+    "effect": "",
+    "frame_size": 1,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1063",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_10420",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1081"
+    ]
+  },
+  {
+    "id": "char_1082",
+    "name": "普鲁特",
+    "image": "char_icon_1001",
+    "priority": 14,
+    "weight": 1,
+    "relationship": "爸爸！",
+    "desc": "",
+    "job": "我好想你……",
+    "effect": "",
+    "frame_size": 0.8,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_1081",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1082",
+      "flag_10730"
+    ]
+  },
+  {
+    "id": "char_1083",
+    "name": "甘",
+    "image": "char_icon_1003",
+    "priority": 15,
+    "weight": 1,
+    "relationship": "甘，你知道吗……",
+    "desc": "",
+    "job": "我上次去游乐园玩，差点出大事，还好……",
+    "effect": "",
+    "frame_size": 1,
+    "min_tree_time": -1,
+    "max_tree_time": -1,
+    "flag_conditions": [
+      {
+        "id": "flag_10730",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      },
+      {
+        "id": "flag_10310",
+        "has": true,
+        "in_parent": false,
+        "alive": true,
+        "has_time": -1
+      }
+    ],
+    "active_flag": [
+      "flag_1083"
     ]
   },
   {

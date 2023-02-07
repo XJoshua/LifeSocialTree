@@ -78,7 +78,7 @@ public class TheGame : MonoSingleton<TheGame>
 
         if (Input.GetKey(KeyCode.Space))
         {
-            Time.timeScale = 1;
+            Time.timeScale = 2;
         }
         else
         {
