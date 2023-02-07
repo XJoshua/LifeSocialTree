@@ -83,7 +83,13 @@ namespace Game
             {
                 for (int i = 0; i < trunks.Count; i++)
                 {
-                    GameObject.Destroy(trunks[i].gameObject);
+                    trunks[i].Clear();
+                    
+                    // todo 这里有问题，剪枝的时候已经把枝删掉了
+                    if (trunks[i] && trunks[i].gameObject != null)
+                    {
+                        GameObject.Destroy(trunks[i].gameObject);
+                    }
                 }
 
                 trunks.Clear();

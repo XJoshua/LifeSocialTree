@@ -279,7 +279,10 @@ namespace Game
             }
             else
             {
-                ParentBranch.GetClipLife(gotLife, this);
+                if (ParentBranch != null)
+                {
+                    ParentBranch.GetClipLife(gotLife, this);
+                }
             }
         }
 

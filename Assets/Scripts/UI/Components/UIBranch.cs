@@ -73,6 +73,15 @@ public class UIBranch : MonoBehaviour
         }
     }
 
+    // 清空人物物体
+    public void Clear()
+    {
+        for (var i = 0; i < Characters.Count; i++)
+        {
+            GameObject.Destroy(Characters[i].gameObject);
+        }
+    }
+    
     private void OnMouseDown()
     {
         if (ParentBranch == null) return;

@@ -84,16 +84,12 @@ public class TheGame : MonoSingleton<TheGame>
         {
             Time.timeScale = 0;
         }
-    
-
     }
-
-
-
 
     public void NewGame()
     {
         ResetCamera();
+        UITreeMng.Clear();
         TreeMng = new TreeManager();
         TreeMng.CreateNewTree();
         IsGameStart = true;
@@ -113,10 +109,6 @@ public class TheGame : MonoSingleton<TheGame>
         Camera.orthographicSize = 5;
     }
 
-
-
-
-
     private void ZoomCamera()
     {
         float zoomValue = Input.GetAxis("Mouse ScrollWheel");
@@ -130,17 +122,13 @@ public class TheGame : MonoSingleton<TheGame>
         }
     }
 
-
     private void MoveCamera()
     { 
-
         Vector2 screenpos = Camera.main.WorldToScreenPoint(Input.mousePosition);
         Vector3 targetPos =new Vector3(screenpos.x, screenpos.y, Camera.transform.position.z);
         Debug.Log(targetPos);
         Camera.transform.position = Vector3.MoveTowards(transform.position, targetPos, 0.1f * Time.deltaTime);
     }
-
-
 
     public void CheckMoveCamera(Vector3 pos)
     {
