@@ -67,3 +67,5 @@ LubanConfig/Datas/~$*.xlsx
 Recordings/
 AssetBundles/*
 Assets/StreamingAssets/AssetBundles/*
+Assets/Samples/*
+Assets/Samples.meta
